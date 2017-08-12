@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pages_Base_Account" xml:space="preserve">
+    <value>帳號</value>
+  </data>
+  <data name="Pages_Base_Address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Pages_Base_AddShoppingCart" xml:space="preserve">
+    <value>加入購物車</value>
+  </data>
+  <data name="Pages_Base_AddSuccess" xml:space="preserve">
+    <value>加入成功</value>
+  </data>
+  <data name="Pages_Base_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Pages_Base_Category" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="Pages_Base_CategoryAll" xml:space="preserve">
+    <value>所有分類</value>
+  </data>
+  <data name="Pages_Base_CategoryAlls" xml:space="preserve">
+    <value>全部分類</value>
+  </data>
+  <data name="Pages_Base_Check" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Pages_Base_CheckFields" xml:space="preserve">
+    <value>請確認欄位是否有正確填入</value>
+  </data>
+  <data name="Pages_Base_Collect" xml:space="preserve">
+    <value>收藏</value>
+  </data>
+  <data name="Pages_Base_CommonAddressee" xml:space="preserve">
+    <value>常用收件人</value>
+  </data>
+  <data name="Pages_Base_Count" xml:space="preserve">
+    <value>數量</value>
+  </data>
+  <data name="Pages_Base_Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Pages_Base_Description" xml:space="preserve">
+    <value>詳細說明</value>
+  </data>
+  <data name="Pages_Base_Ecoupon" xml:space="preserve">
+    <value>折價券</value>
+  </data>
+  <data name="Pages_Base_Editor" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="Pages_Base_ExcludeEcoupon" xml:space="preserve">
+    <value>不適用折價券</value>
+  </data>
+  <data name="Pages_Base_FailedToConnect" xml:space="preserve">
+    <value>無法順利連線, 請檢查網路狀況</value>
+  </data>
+  <data name="Pages_Base_FbPost" xml:space="preserve">
+    <value>FB貼文</value>
+  </data>
+  <data name="Pages_Base_Freight" xml:space="preserve">
+    <value>運費</value>
+  </data>
+  <data name="Pages_Base_FullDiscount" xml:space="preserve">
+    <value>滿額滿件折扣</value>
+  </data>
+  <data name="Pages_Base_FullName" xml:space="preserve">
+    <value>中文全名</value>
+  </data>
+  <data name="Pages_Base_Gifts" xml:space="preserve">
+    <value>贈品</value>
+  </data>
+  <data name="Pages_Base_GiftsFinish" xml:space="preserve">
+    <value>已贈完</value>
+  </data>
+  <data name="Pages_Base_Index" xml:space="preserve">
+    <value>首頁</value>
+  </data>
+  <data name="Pages_Base_Mobile" xml:space="preserve">
+    <value>手機</value>
+  </data>
+  <data name="Pages_Base_ModePay" xml:space="preserve">
+    <value>付款方式</value>
+  </data>
+  <data name="Pages_Base_ModeTransport" xml:space="preserve">
+    <value>運送方式</value>
+  </data>
+  <data name="Pages_Base_ModifySuccess" xml:space="preserve">
+    <value>修改成功</value>
+  </data>
+  <data name="Pages_Base_MoreCategory" xml:space="preserve">
+    <value>更多分類</value>
+  </data>
+  <data name="Pages_Base_NextStep" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="Pages_Base_NotYetOpenSale" xml:space="preserve">
+    <value>尚未開賣</value>
+  </data>
+  <data name="Pages_Base_Ok" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="Pages_Base_OptionalOffers" xml:space="preserve">
+    <value>任選優惠</value>
+  </data>
+  <data name="Pages_Base_OrderCancel" xml:space="preserve">
+    <value>取消訂單</value>
+  </data>
+  <data name="Pages_Base_OrderList" xml:space="preserve">
+    <value>訂單明細</value>
+  </data>
+  <data name="Pages_Base_OrderSearch" xml:space="preserve">
+    <value>訂單查詢</value>
+  </data>
+  <data name="Pages_Base_OriginalPrice" xml:space="preserve">
+    <value>原價</value>
+  </data>
+  <data name="Pages_Base_PayImmediately" xml:space="preserve">
+    <value>立即結帳</value>
+  </data>
+  <data name="Pages_Base_PhoneNumber" xml:space="preserve">
+    <value>手機號碼</value>
+  </data>
+  <data name="Pages_Base_Precautions" xml:space="preserve">
+    <value>注意事項</value>
+  </data>
+  <data name="Pages_Base_ProductInformation" xml:space="preserve">
+    <value>商品資訊</value>
+  </data>
+  <data name="Pages_Base_ProductNumber" xml:space="preserve">
+    <value>商品編號</value>
+  </data>
+  <data name="Pages_Base_RecommendProduct" xml:space="preserve">
+    <value>推薦商品</value>
+  </data>
+  <data name="Pages_Base_RefundInformation" xml:space="preserve">
+    <value>退款資訊</value>
+  </data>
+  <data name="Pages_Base_Remark" xml:space="preserve">
+    <value>備註</value>
+  </data>
+  <data name="Pages_Base_Required" xml:space="preserve">
+    <value>必填</value>
+  </data>
+  <data name="Pages_Base_ReturnHomePage" xml:space="preserve">
+    <value>回首頁</value>
+  </data>
+  <data name="Pages_Base_ReturnPage" xml:space="preserve">
+    <value>回上頁</value>
+  </data>
+  <data name="Pages_Base_ReturnShoppingCart" xml:space="preserve">
+    <value>回購物車</value>
+  </data>
+  <data name="Pages_Base_Save" xml:space="preserve">
+    <value>儲存</value>
+  </data>
+  <data name="Pages_Base_SelectCounty" xml:space="preserve">
+    <value>請選擇縣市</value>
+  </data>
+  <data name="Pages_Base_Share" xml:space="preserve">
+    <value>分享</value>
+  </data>
+  <data name="Pages_Base_ShopName" xml:space="preserve">
+    <value>商店名稱</value>
+  </data>
+  <data name="Pages_Base_ShoppingCartNumber" xml:space="preserve">
+    <value>購物車編號</value>
+  </data>
+  <data name="Pages_Base_Submit" xml:space="preserve">
+    <value>送出</value>
+  </data>
+  <data name="Pages_Base_TotalAmount" xml:space="preserve">
+    <value>總金額</value>
+  </data>
+  <data name="Pages_Base_UniformNumbers" xml:space="preserve">
+    <value>統一編號</value>
+  </data>
+  <data name="Pages_Base_Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Pages_Base_Recipient" xml:space="preserve">
+    <value>收件人</value>
+  </data>
+  <data name="Pages_Base_NoRecipient" xml:space="preserve">
+    <value>您目前無收件人資料</value>
+  </data>
+  <data name="Pages_Base_RecipientAddress" xml:space="preserve">
+    <value>收件地址</value>
+  </data>
+  <data name="Pages_Base_FirstName" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="Pages_Base_LastName" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="Pages_Base_FirstNameRequired" xml:space="preserve">
+    <value>姓為必填欄位</value>
+  </data>
+  <data name="Pages_Base_LastNameRequired" xml:space="preserve">
+    <value>名為必填欄位</value>
+  </data>
+  <data name="Pages_Base_MaxNameLength" xml:space="preserve">
+    <value>最多50個字</value>
+  </data>
+  <data name="Pages_Base_MobileRequired" xml:space="preserve">
+    <value>手機為必填欄位</value>
+  </data>
+  <data name="Pages_Base_SoldOutting" xml:space="preserve">
+    <value>售完補貨中</value>
+  </data>
+</root>
