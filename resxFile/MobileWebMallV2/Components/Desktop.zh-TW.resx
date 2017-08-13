@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Components_AboutUs" xml:space="preserve">
+    <value>關於我們</value>
+  </data>
+  <data name="Components_Activity_All" xml:space="preserve">
+    <value>所有活動</value>
+  </data>
+  <data name="Components_Activity_More" xml:space="preserve">
+    <value>更多活動</value>
+  </data>
+  <data name="Components_Activity_New" xml:space="preserve">
+    <value>最新活動</value>
+  </data>
+  <data name="Components_Activity_Promotion" xml:space="preserve">
+    <value>折扣活動</value>
+  </data>
+  <data name="Components_BrandStory" xml:space="preserve">
+    <value>品牌故事</value>
+  </data>
+  <data name="Components_Coupon_More" xml:space="preserve">
+    <value>更多優惠券</value>
+  </data>
+  <data name="Components_Coupon_MoreShop" xml:space="preserve">
+    <value>更多門市優惠</value>
+  </data>
+  <data name="Components_CouponShop" xml:space="preserve">
+    <value>門市優惠</value>
+  </data>
+  <data name="Components_Download" xml:space="preserve">
+    <value>下載</value>
+  </data>
+  <data name="Components_DownloadApp" xml:space="preserve">
+    <value>手機掃描QRcode 立即下載</value>
+  </data>
+  <data name="Components_Ecoupon" xml:space="preserve">
+    <value>折價券</value>
+  </data>
+  <data name="Components_Ecoupon_More" xml:space="preserve">
+    <value>更多折價券</value>
+  </data>
+  <data name="Components_Extension" xml:space="preserve">
+    <value>分機</value>
+  </data>
+  <data name="Components_Gift" xml:space="preserve">
+    <value>贈品</value>
+  </data>
+  <data name="Components_InputMobileNumber" xml:space="preserve">
+    <value>請輸入您的手機號碼</value>
+  </data>
+  <data name="Components_Member_Statement" xml:space="preserve">
+    <value>會員權益聲明</value>
+  </data>
+  <data name="Components_Member_Login" xml:space="preserve">
+    <value>會員登入/註冊</value>
+  </data>
+  <data name="Components_Member_Logout" xml:space="preserve">
+    <value>會員登出</value>
+  </data>
+  <data name="Components_Member_Only" xml:space="preserve">
+    <value>會員專區</value>
+  </data>
+  <data name="Components_MobileFomat_Error" xml:space="preserve">
+    <value>手機格式不正確</value>
+  </data>
+  <data name="Components_Mode_Pay" xml:space="preserve">
+    <value>付款方式</value>
+  </data>
+  <data name="Components_Mode_Returns" xml:space="preserve">
+    <value>退換貨方式</value>
+  </data>
+  <data name="Components_Mode_Transport" xml:space="preserve">
+    <value>運送方式</value>
+  </data>
+  <data name="Components_More" xml:space="preserve">
+    <value>看更多</value>
+  </data>
+  <data name="Components_MyAccount" xml:space="preserve">
+    <value>我的帳戶</value>
+  </data>
+  <data name="Components_MyCollect" xml:space="preserve">
+    <value>我的收藏</value>
+  </data>
+  <data name="Components_MyEcoupon" xml:space="preserve">
+    <value>我的折價券</value>
+  </data>
+  <data name="Components_New" xml:space="preserve">
+    <value>最新</value>
+  </data>
+  <data name="Components_New_AddItem" xml:space="preserve">
+    <value>最新加入項目</value>
+  </data>
+  <data name="Components_OfficialApp" xml:space="preserve">
+    <value>官方APP</value>
+  </data>
+  <data name="Components_OfficialApp_Download" xml:space="preserve">
+    <value>輸入手機下載官方APP，購物更便利</value>
+  </data>
+  <data name="Components_OfficialApp_Use" xml:space="preserve">
+    <value>立刻使用官方APP</value>
+  </data>
+  <data name="Components_OrderSearch" xml:space="preserve">
+    <value>訂單查詢</value>
+  </data>
+  <data name="Components_Pay" xml:space="preserve">
+    <value>結帳</value>
+  </data>
+  <data name="Components_PrivacyPolicy" xml:space="preserve">
+    <value>隱私權條款</value>
+  </data>
+  <data name="Components_Product_Category" xml:space="preserve">
+    <value>商品分類</value>
+  </data>
+  <data name="Components_Product_Collect" xml:space="preserve">
+    <value>收藏商品</value>
+  </data>
+  <data name="Components_Product_Image" xml:space="preserve">
+    <value>商品圖片</value>
+  </data>
+  <data name="Components_Promotion" xml:space="preserve">
+    <value>折扣</value>
+  </data>
+  <data name="Components_Promotion_Count" xml:space="preserve">
+    <value> 共{0}個折扣活動</value>
+  </data>
+  <data name="Components_Promotion_Gift" xml:space="preserve">
+    <value>折+贈</value>
+  </data>
+  <data name="Components_Promotion_More" xml:space="preserve">
+    <value>更多折扣活動</value>
+  </data>
+  <data name="Components_Reciprocal" xml:space="preserve">
+    <value>倒數</value>
+  </data>
+  <data name="Components_Recommend_Product" xml:space="preserve">
+    <value>推薦商品</value>
+  </data>
+  <data name="Components_SalePage" xml:space="preserve">
+    <value>商品頁圖片</value>
+  </data>
+  <data name="Components_SaleRank" xml:space="preserve">
+    <value>銷售排行</value>
+  </data>
+  <data name="Components_Send_Message" xml:space="preserve">
+    <value>發送訊息</value>
+  </data>
+  <data name="Components_Service_Information" xml:space="preserve">
+    <value>客服資訊</value>
+  </data>
+  <data name="Components_Service_Message" xml:space="preserve">
+    <value>客服留言</value>
+  </data>
+  <data name="Components_Service_Phone" xml:space="preserve">
+    <value>客服專線</value>
+  </data>
+  <data name="Components_Service_Question" xml:space="preserve">
+    <value>常見問題</value>
+  </data>
+  <data name="Components_ShoppingCartNoProduct" xml:space="preserve">
+    <value>購物車內目前沒有商品</value>
+  </data>
+  <data name="Components_ShoppingDescription" xml:space="preserve">
+    <value>購物說明</value>
+  </data>
+  <data name="Components_Site_BestBrowser" xml:space="preserve">
+    <value>本站最佳瀏覽環境請使用Google Chrome、Firefox或IE10以上版本</value>
+  </data>
+  <data name="Components_Site_Menu" xml:space="preserve">
+    <value>網站主選單</value>
+  </data>
+  <data name="Components_Site_SecMenu" xml:space="preserve">
+    <value>網站次選單</value>
+  </data>
+  <data name="Components_ShopIntroduction" xml:space="preserve">
+    <value>商店簡介</value>
+  </data>
+  <data name="Components_Success_Add" xml:space="preserve">
+    <value>加入成功</value>
+  </data>
+  <data name="Components_Success_Remove" xml:space="preserve">
+    <value>移除成功</value>
+  </data>
+  <data name="Components_Theme_Album" xml:space="preserve">
+    <value>主題專輯</value>
+  </data>
+  <data name="Components_TransferPoint" xml:space="preserve">
+    <value>傳送載點</value>
+  </data>
+  <data name="Components_TransferPoint_Free" xml:space="preserve">
+    <value>免費傳送載點至手機</value>
+  </data>
+  <data name="Components_ShoppingCart" xml:space="preserve">
+    <value>購物車</value>
+  </data>
+</root>

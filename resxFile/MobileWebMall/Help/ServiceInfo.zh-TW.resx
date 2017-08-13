@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pages_ServicePage_NineYiWillBuy" xml:space="preserve">
+    <value>91mai就要買</value>
+  </data>
+  <data name="Pages_ServicePage_ServiceDescription" xml:space="preserve">
+    <value>服務說明</value>
+  </data>
+  <data name="Pages_ServicePage_WillJoin" xml:space="preserve">
+    <value>就要加入</value>
+  </data>
+  <data name="Pages_ServicePage_EasyJoin" xml:space="preserve">
+    <value>輕鬆加入</value>
+  </data>
+  <data name="Pages_ServicePage_AddSiteMembership" xml:space="preserve">
+    <value>加入本站會員，只需以&lt;b&gt;「Facebook帳號」&lt;/b&gt;或&lt;b&gt; 「手機號碼」&lt;/b&gt;申請，即可輕鬆加入本站的會員囉~~&lt;a&gt;加入會員&lt;/a&gt;</value>
+  </data>
+  <data name="Pages_ServicePage_WillToBuy" xml:space="preserve">
+    <value>就要購買</value>
+  </data>
+  <data name="Pages_ServicePage_MultiplePayment" xml:space="preserve">
+    <value>多元付款</value>
+  </data>
+  <data name="Pages_ServicePage_SiteProvidesPaymentMethods" xml:space="preserve">
+    <value>本站提供的付款方式，有&lt;b&gt;「信用卡」&lt;/b&gt;與&lt;b&gt;「超商取貨付款」&lt;/b&gt;；&lt;b&gt;「超商取貨付款」&lt;/b&gt;僅限商品頁中的"運送說明"中，有"超商取貨"的標示。多元的付款方式，方便又好用。&lt;br /&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="Pages_ServicePage_TransactionSecurityDescription" xml:space="preserve">
+    <value>為確保網路交易安全，您了解本公司得就本件交易資料向發卡銀行及持卡人照會是否屬實。提醒您，如有冒用他人信用卡或其他個人資料而為交易者，經查獲必移送法辦。</value>
+  </data>
+  <data name="Pages_ServicePage_GoodLookingGoodBuy" xml:space="preserve">
+    <value>好找好買</value>
+  </data>
+  <data name="Pages_ServicePage_SearchKeyWordDescription" xml:space="preserve">
+    <value>本站提供超好用的「搜尋」，只要輸入您就要買的商品名稱或關鍵字，馬上可以找到您想要買的商品喔~~</value>
+  </data>
+  <data name="Pages_ServicePage_FastPay" xml:space="preserve">
+    <value>快速結帳</value>
+  </data>
+  <data name="Pages_ServicePage_FillInformationDescription" xml:space="preserve">
+    <value>只需在付款流程中，"資料填寫"勾選信用卡資料下方的&lt;b&gt; "儲存本次付款與收件資料，並設定為快速結帳"的選項&lt;/b&gt;，就要輕鬆快速買。</value>
+  </data>
+  <data name="Pages_ServicePage_BuyOnceAll" xml:space="preserve">
+    <value>一次買齊</value>
+  </data>
+  <data name="Pages_ServicePage_AddShoppingCartDescription" xml:space="preserve">
+    <value>本站商品齊全，只要想買，統統&lt;b&gt;「放入購物車」&lt;/b&gt;，一次買齊，再使用快速結帳，省時又方便。&lt;a&gt;購物車&lt;/a&gt;</value>
+  </data>
+  <data name="Pages_ServicePage_WillQuery" xml:space="preserve">
+    <value>就要查詢</value>
+  </data>
+  <data name="Pages_ServicePage_EasyRecord" xml:space="preserve">
+    <value>方便紀錄</value>
+  </data>
+  <data name="Pages_ServicePage_CommonAddresseeDescription" xml:space="preserve">
+    <value>每次訂購填寫的寄件資料，會主動紀錄在&lt;b&gt;「常用收件人」&lt;/b&gt;中，方便您下次訂購，可在資料填寫時，&lt;b&gt;「從常用收件人」&lt;/b&gt;選擇您要收件的地址。「常用收件人」可隨時編輯與刪除，方便又好用。&lt;a &gt;常用收件人&lt;/a&gt;</value>
+  </data>
+  <data name="Pages_ServicePage_AtGlance" xml:space="preserve">
+    <value>一目瞭然</value>
+  </data>
+  <data name="Pages_ServicePage_GoodHelperDescription" xml:space="preserve">
+    <value>是您的好幫手，訂購紀錄一目了然，不管查詢訂單進度、退/換貨服務、發票資訊、客服中心、即時訊息、密碼變更...等，都可以在「我的帳戶」中，一次查到喔</value>
+  </data>
+  <data name="Pages_ServicePage_MyAccount" xml:space="preserve">
+    <value>我的帳戶</value>
+  </data>
+  <data name="Pages_ServicePage_PutShoppingCart" xml:space="preserve">
+    <value>放入購物車</value>
+  </data>
+</root>

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PrivacyDesc" xml:space="preserve">
+    <value>&lt;dl class="papersBox privacy"&gt;
+        &lt;dt&gt;
+        &lt;p&gt;Privacy Statement&lt;/p&gt;
+        &lt;/dt&gt;
+        &lt;dd&gt;
+            &lt;p&gt;
+                &lt;span&gt;{0}&lt;/span&gt; is operated by
+                &lt;span&gt;{1}&lt;/span&gt;; in order to safeguard personal privacy and to support personal data protection,
+                &lt;span&gt;{0}&lt;/span&gt; hereby uses the following statement to explain to you the purpose of collection, classification, scope of use and way of the use of personal data, and the rights you may exercise, etc. If you have any questions about the privacy statement of
+                &lt;span&gt;{0}&lt;/span&gt;, the following related informing items, or any issues related to personal data protection, you can contact the
+                &lt;span&gt;{0}&lt;/span&gt; service center, and
+                &lt;span&gt;{0}&lt;/span&gt; will reply as soon as possible.
+            &lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;b&gt;Scope of Use&lt;/b&gt;
+                    &lt;p&gt;
+                        &lt;span&gt;{0}&lt;/span&gt; Privacy Statement and its relevant informing items only apply to the websites which
+                        &lt;span&gt;{0}&lt;/span&gt; owns and operates.
+                        &lt;span&gt;{0}&lt;/span&gt; website may contain a number of links, or goods or services provided by other cooperative partners and individual stores. With regards to the Privacy Statement and the informing items related to personal data protection of such linked websites, the websites of other cooperative partners, or the online shops of individual stores, please refer to each of the linked websites, cooperative partners' websites or the websites of the individual stores' online shops.
+                    &lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;b&gt;The Purpose and the Classification of Personal Data Collection&lt;/b&gt;
+                    &lt;p&gt;
+                        In order to provide e-commerce services and/or after-sales service, to perform statutory or contractual obligation, to protect the rights and the interests of the parties and relevant stakeholders, to conduct marketing, customer management and service, and to operate the registered business items or the business stipulated in the organization's articles of association, depending on the nature of the various services,
+                        &lt;span&gt;{0}&lt;/span&gt; may collect your name, contact information (including but not limited to telephone numbers, e-mail, and address, etc.), any information which is required to complete collection or payment, IP address, and other personal data which can be used to directly or indirectly recognize user's identity. In addition, to improve service quality,
+                        &lt;span&gt;{0}&lt;/span&gt; will record the user's IP address and the browsing activities on
+                        &lt;span&gt;{0}&lt;/span&gt;'s related websites or APPs (for example, the hardware and software the user use, the web pages the user clicks on, the APPs the user downloads) and other related information in accordance with the nature of the services provided, and the information will only be used for traffic analysis and network behavior surveys in order to improve the service quality of
+                        &lt;span&gt;{0}&lt;/span&gt;'s related websites, and will not be connected to specific individual.
+                    &lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;b&gt;Use of Personal Data&lt;/b&gt;
+                    &lt;p&gt;
+                        The personal data that
+                        &lt;span&gt;{0}&lt;/span&gt; collects, which is sufficient to recognize user's identity, are only provided for the internal use, processing in accordance with the purpose of personal data collection, except with the prior description, or for the purpose of completing the services provided or fulfilling contractual obligations, or in accordance with relevant laws and regulations or the competent authorities's order or demand, otherwise
+                        &lt;span&gt;{0}&lt;/span&gt; will not provide any personal data which is sufficient to recognize user's identity to any third party (including domestic and foreign), or use the personal data for other purposes other than the original purpose of collection.
+                        &lt;span&gt;{0}&lt;/span&gt; will continue to maintain, process and use relevant information.
+                    &lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;b&gt;Information Security&lt;/b&gt;
+                    &lt;p&gt;
+                        &lt;span&gt;{0}&lt;/span&gt; will maintain the safety of the personal data of
+                        &lt;span&gt;{0}&lt;/span&gt; with reasonable technical and procedure which meet the industry standards.
+                    &lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;b&gt;The Rights of the Party&lt;/b&gt;
+                    &lt;p&gt;
+                        The party may request any inquiry or review of the party’s personal data or request for a duplicate. If your personal data has changed, or you have found that your personal data is incorrect, you can request
+                        &lt;span&gt;{0}&lt;/span&gt; to modify or correct it. When the specific purpose of collecting personal data no longer exists or time period expires, you can request to delete, stop processing or use your personal data. However, the aforementioned procedure is not applicable when it is necessary for
+                        &lt;span&gt;{0}&lt;/span&gt; to perform an official duty or fulfill a legal obligation.
+                    &lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;b&gt;Cookie&lt;/b&gt;
+                    &lt;p&gt;
+                        In order to facilitate users,
+                        &lt;span&gt;{0}&lt;/span&gt; website may read the cookie data stored in user's computer. Users can cancel or limit the function by changing browser settings, but may not be able to use part of the website functions. If you want to know how to cancel or limit such function, please contact the
+                        &lt;span&gt;{0}&lt;/span&gt; customer service center.
+                    &lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;b&gt;Google Analytics (analysis) Advertising Function&lt;/b&gt;
+                    &lt;p&gt;
+                        This service has installed Google Analytics (analysis) advertising function. This function is only used to provide
+                        &lt;span&gt;{0}&lt;/span&gt; for advertising effectiveness analysis and optimization of the use of the process. If you want to disable Google Analytics (analysis) advertising function,
+                        we suggest that you refer to the means provided by Google to deactivate the service &lt;a target="_blank" href="https://tools.google.com/dlpage/gaoptout/"&gt; without disclosing the information.&lt;/a&gt;
+                    &lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;b&gt;Influence&lt;/b&gt;
+                    &lt;p&gt;
+                        If you are not willing to provide personal data that each service or transaction required to
+                        &lt;span&gt;{0}&lt;/span&gt;, and not willing to agree that
+                        &lt;span&gt;{0}&lt;/span&gt; may conduct relevant personal data collection, processing, use and international transport in accordance with laws, regulations and the Privacy Statement and its related content,
+                        &lt;span&gt;{0}&lt;/span&gt; will respect your decision, but depending on the nature or conditions of each of the services, you may not be able to use such services or complete related transactions.
+                        &lt;span&gt;{0}&lt;/span&gt; reserve the right to decide if we agree to provide such related services or complete related transactions.
+                    &lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;b&gt;Rights of Amendments&lt;/b&gt;
+                    &lt;p&gt;
+                       &lt;span&gt;{0}&lt;/span&gt; shall have the right to amend this privacy statement and related informing items and may publish the content of amendment on the
+                        &lt;span&gt;{0}&lt;/span&gt; website without notifying our members individually. You can always refer to the amended privacy statement and related informing items on the
+                        &lt;span&gt;{0}&lt;/span&gt; website.
+                    &lt;/p&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/dd&gt;
+    &lt;/dl&gt;</value>
+  </data>
+</root>

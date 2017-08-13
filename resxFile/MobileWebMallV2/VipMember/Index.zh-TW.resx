@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pages_VipMemberIndex_Amount" xml:space="preserve">
+    <value>金額（含折扣）</value>
+  </data>
+  <data name="Pages_VipMemberIndex_AsLongAsConsumption" xml:space="preserve">
+    <value>於{0}前，只要再消費{1}元，即可保有{2}資格</value>
+  </data>
+  <data name="Pages_VipMemberIndex_CommonAddressee" xml:space="preserve">
+    <value>常用收件人</value>
+  </data>
+  <data name="Pages_VipMemberIndex_CommonProblem" xml:space="preserve">
+    <value>問答紀錄/常見問題</value>
+  </data>
+  <data name="Pages_VipMemberIndex_CommonProblemDescription" xml:space="preserve">
+    <value>常見問題與說明</value>
+  </data>
+  <data name="Pages_VipMemberIndex_CommonUniformNumbers" xml:space="preserve">
+    <value>常用統一編號</value>
+  </data>
+  <data name="Pages_VipMemberIndex_Congratulations" xml:space="preserve">
+    <value>恭喜您，您已經是最高等級</value>
+  </data>
+  <data name="Pages_VipMemberIndex_ContinuedConditions" xml:space="preserve">
+    <value>續等條件</value>
+  </data>
+  <data name="Pages_VipMemberIndex_CumulativeConsumptionAmount" xml:space="preserve">
+    <value>累計消費金額</value>
+  </data>
+  <data name="Pages_VipMemberIndex_EnoughDollar" xml:space="preserve">
+    <value>滿{0}元可升等</value>
+  </data>
+  <data name="Pages_VipMemberIndex_Expire" xml:space="preserve">
+    <value>{0}到期</value>
+  </data>
+  <data name="Pages_VipMemberIndex_LastUpdate" xml:space="preserve">
+    <value>最後更新</value>
+  </data>
+  <data name="Pages_VipMemberIndex_LastUpdateTime" xml:space="preserve">
+    <value>最後更新時間</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberBirthDayPresent" xml:space="preserve">
+    <value>會員生日禮</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberCollectPoint" xml:space="preserve">
+    <value>會員集點/優惠好禮</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberDataUpdate" xml:space="preserve">
+    <value>會員資料更新中</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberEntrance" xml:space="preserve">
+    <value>會員專區入口</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberLevelDescription" xml:space="preserve">
+    <value>會員等級說明</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberOpenCardGifts" xml:space="preserve">
+    <value>會員開卡好禮</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberPrivacyDescription" xml:space="preserve">
+    <value>會員隱私權/權益說明</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberProfile" xml:space="preserve">
+    <value>會員基本資料</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberSetting" xml:space="preserve">
+    <value>會員設定</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MemberSystemUpdate" xml:space="preserve">
+    <value>會員系統資料更新中，請於稍後重新載入頁面</value>
+  </data>
+  <data name="Pages_VipMemberIndex_ModifyPassWord" xml:space="preserve">
+    <value>修改密碼</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MyCollect" xml:space="preserve">
+    <value>我的收藏</value>
+  </data>
+  <data name="Pages_VipMemberIndex_MyEcoupon" xml:space="preserve">
+    <value>我的折價券</value>
+  </data>
+  <data name="Pages_VipMemberIndex_NotEnoughDollar" xml:space="preserve">
+    <value>差{0}元</value>
+  </data>
+  <data name="Pages_VipMemberIndex_OrderDate" xml:space="preserve">
+    <value>訂單日期</value>
+  </data>
+  <data name="Pages_VipMemberIndex_OrderMorePreview" xml:space="preserve">
+    <value>瀏覽更多訂單</value>
+  </data>
+  <data name="Pages_VipMemberIndex_OrderNotFound" xml:space="preserve">
+    <value>查無近期訂單資料</value>
+  </data>
+  <data name="Pages_VipMemberIndex_OrderNumber" xml:space="preserve">
+    <value>訂單編號</value>
+  </data>
+  <data name="Pages_VipMemberIndex_OrderRecord" xml:space="preserve">
+    <value>最近訂單紀錄</value>
+  </data>
+  <data name="Pages_VipMemberIndex_OrdersContent" xml:space="preserve">
+    <value>訂單內容</value>
+  </data>
+  <data name="Pages_VipMemberIndex_OrderSearch" xml:space="preserve">
+    <value>訂單查詢</value>
+  </data>
+  <data name="Pages_VipMemberIndex_OrderStatus" xml:space="preserve">
+    <value>訂單狀態</value>
+  </data>
+  <data name="Pages_VipMemberIndex_PermanentValidity" xml:space="preserve">
+    <value>永久效期</value>
+  </data>
+  <data name="Pages_VipMemberIndex_PleaseCheckAgainTomorrow" xml:space="preserve">
+    <value>請於明日重新查詢</value>
+  </data>
+  <data name="Pages_VipMemberIndex_SystemUpdate" xml:space="preserve">
+    <value>系統資料更新中，請稍後再試</value>
+  </data>
+  <data name="Pages_VipMemberIndex_TheSameDayConsumption" xml:space="preserve">
+    <value>當日消費</value>
+  </data>
+  <data name="Pages_VipMemberIndex_Undone" xml:space="preserve">
+    <value>未完成</value>
+  </data>
+  <data name="Pages_VipMemberIndex_UpgradedLevel" xml:space="preserve">
+    <value>可升等級別</value>
+  </data>
+  <data name="Pages_VipMemberIndex_Welcome" xml:space="preserve">
+    <value>您好，歡迎光臨</value>
+  </data>
+  <data name="Pages_VipMemberIndex_OrderMorePreivew" xml:space="preserve">
+    <value>瀏覽更多訂單</value>
+  </data>
+  <data name="Pages_VipMemberIndex_TotalPurchase" xml:space="preserve">
+    <value>累積消費 </value>
+  </data>
+  <data name="Pages_VipMemberIndex_OtherFeatures" xml:space="preserve">
+    <value>其他服務</value>
+  </data>
+  <data name="Pages_VipMemberIndex_ThirdParty" xml:space="preserve">
+    <value>其他平台訂單查詢</value>
+  </data>
+</root>

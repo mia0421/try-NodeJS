@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <script src="/javascripts/angular.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px 50px;
+        }
+        .content {
+            display: flex;
+        }
+
+        .contentR {
+            flex: 3;
+        }
+
+        .contentL {
+            flex: 1;
+        }
+
+        ul {
+            padding-left: 26px;
+        }
+    </style>
+</head>
+<body ng-app="app" ng-controller="myCtrl">
+<h1><%= title %></h1>
+<input type="text">
+<hr/>
+<div class="content">
+    <div class="contentL">
+        <ul>
+            <li ng-repeat="ItemV1 in FolderList" ng-if="!ItemV1.IsFolder||ItemV1.ChildList.length!==0">
+                <a ng-click="GetXmlData(ItemV1)">{{ItemV1.Name}}</a>
+                <ul ng-if="ItemV1.IsFolder&&ItemV1.ChildList.length!==0">
+                    <li ng-repeat="ItemV2 in  ItemV1.ChildList" ng-if="!ItemV2.IsFolder||ItemV2.ChildList.length!==0">
+                        <a ng-click="GetXmlData(ItemV2)">{{ItemV2.Name}}</a>
+                        <ul ng-if="ItemV2.IsFolder&&ItemV2.ChildList.length!==0">
+                            <li ng-repeat="ItemV3 in ItemV2.ChildList">
+                                <a ng-click="GetXmlData(ItemV3)"> {{ItemV3.Name}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="contentR">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Key</th>
+                <th ng-repeat="Language in LanguageList track by $index">{{Language}}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="Item in FileList">
+                <td>
+                    {{Item.Key}}
+                </td>
+                <td ng-repeat="val in Item.Val">
+                    {{val.Txt}}
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+
+</body>
 </html>

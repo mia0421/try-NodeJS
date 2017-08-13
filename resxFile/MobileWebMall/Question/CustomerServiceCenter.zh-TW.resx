@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pages_Question_CustomerService" xml:space="preserve">
+    <value>客服中心</value>
+  </data>
+  <data name="Pages_Question_Welcome" xml:space="preserve">
+    <value>歡迎光臨</value>
+  </data>
+  <data name="Pages_Question_QuestionRecords" xml:space="preserve">
+    <value>以下是您詢問客服的問答記錄</value>
+  </data>
+  <data name="Pages_Question_CommonProblem" xml:space="preserve">
+    <value>常見問題</value>
+  </data>
+  <data name="Pages_Question_QuestionSingleNumber" xml:space="preserve">
+    <value>問題單編號</value>
+  </data>
+  <data name="Pages_Question_OrderNumber" xml:space="preserve">
+    <value>訂單編號</value>
+  </data>
+  <data name="Pages_Question_ProductNumber" xml:space="preserve">
+    <value>商品編號</value>
+  </data>
+  <data name="Pages_Question_NotQuestionRecords" xml:space="preserve">
+    <value>您目前無問答紀錄</value>
+  </data>
+  <data name="Pages_Question_OrderProgress" xml:space="preserve">
+    <value>訂單進度</value>
+  </data>
+  <data name="Pages_Question_OrderSuccessTitle" xml:space="preserve">
+    <value>◎   是否訂購成功</value>
+  </data>
+  <data name="Pages_Question_OrderSuccessMsg" xml:space="preserve">
+    <value>訂單成立後，系統會發送『訂單確認』電子郵件給您，確認訂單詳細資料，包括訂購明細和收件資訊。</value>
+  </data>
+  <data name="Pages_Question_OrderProgressTitle" xml:space="preserve">
+    <value>◎   如何追蹤訂單進度</value>
+  </data>
+  <data name="Pages_Question_OrderProgressMsg" xml:space="preserve">
+    <value>有關商品的出貨進度，可在『我的帳戶&gt;訂單查詢』中查詢。</value>
+  </data>
+  <data name="Pages_Question_OrderCancelTitle" xml:space="preserve">
+    <value>◎   如何取消訂單</value>
+  </data>
+  <data name="Pages_Question_OrderCancelMsg" xml:space="preserve">
+    <value>商品尚未出貨前，可於『我的帳戶&amp;gt;訂單查詢』中，點選""&lt;label"&gt;取消訂單&lt;/label&gt;""按鈕。</value>
+  </data>
+  <data name="Pages_Question_ReturnsOrRefundInstructions" xml:space="preserve">
+    <value>退換貨/退款說明</value>
+  </data>
+  <data name="Pages_Question_ReturnsProductTitle" xml:space="preserve">
+    <value>◎   退換貨說明</value>
+  </data>
+  <data name="Pages_Question_ReturnsProductMsg" xml:space="preserve">
+    <value>請參考『購物說明&gt;退換貨說明』。</value>
+  </data>
+  <data name="Pages_Question_RefundInstructionsTitle" xml:space="preserve">
+    <value>◎   退款：退款方式會依您使用的付款方式退款</value>
+  </data>
+  <data name="Pages_Question_RefundCreditCardMsg" xml:space="preserve">
+    <value>信用卡：如果您是信用卡付款，我們會將您的款項刷退至您當初刷卡付款的信用卡帳戶中。</value>
+  </data>
+  <data name="Pages_Question_RefundSuperPickupMsg" xml:space="preserve">
+    <value>便利商店/超商付款取貨：如果您是使用便利商店/超商付款取貨的付款方式，請您在填寫退貨申請時，
+務必依退貨退款頁面，填寫正確的退款帳號資料。在商店確認商品退貨完成後，我們將於7個工作天內，
+退款至您的指定帳號中。</value>
+  </data>
+  <data name="Pages_Question_ECouponNotes" xml:space="preserve">
+    <value>折價券注意事項</value>
+  </data>
+  <data name="Pages_Question_ECouponTitle" xml:space="preserve">
+    <value>◎   我的折價劵</value>
+  </data>
+  <data name="Pages_Question_ECouponMsg" xml:space="preserve">
+    <value>進入『我的帳戶&gt;我的折價劵』，可以查詢折價劵或輸入折價劵號。</value>
+  </data>
+  <data name="Pages_Question_ECouponUseTitle" xml:space="preserve">
+    <value>◎   如何使用折價劵</value>
+  </data>
+  <data name="Pages_Question_ECouponUseMsg" xml:space="preserve">
+    <value>在結帳時，點選使用折價券或填入折價券折扣碼，就可以享有優惠喔！</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleTitle" xml:space="preserve">
+    <value>◎   折價劵使用規則</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleOne" xml:space="preserve">
+    <value>1. 每家商店、每次結帳，&lt;label&gt;只能使用一張折價券&lt;/label&gt;。</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleTow" xml:space="preserve">
+    <value>2. 折價券最多只能折抵該次購買總金額的30%。</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleThree" xml:space="preserve">
+    <value>3. 若結帳商品標註為「不適用折價券」，則該商品不能使用折價券進行折抵。</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleFour" xml:space="preserve">
+    <value>4. 折價券僅能使用一次且不找零，一經使用無法恢復。</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleFive" xml:space="preserve">
+    <value>5. 使用折價券的訂單如取消或退貨，折價券將自動失效不會歸還。</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleSix" xml:space="preserve">
+    <value>6. 折價券有使用效期，逾期後則無法使用，且無法恢復。</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleSeven" xml:space="preserve">
+    <value>7. 折價券不可折抵運費。</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleEight" xml:space="preserve">
+    <value>8. 折價券可與商店其他折扣活動併用。</value>
+  </data>
+  <data name="Pages_Question_ElectronicInvoiceDescription" xml:space="preserve">
+    <value>電子發票說明</value>
+  </data>
+  <data name="Pages_Question_NotElectronicInvoiceTitle" xml:space="preserve">
+    <value>◎ 為何沒有收到發票?</value>
+  </data>
+  <data name="Pages_Question_NotElectronicInvoiceMsg" xml:space="preserve">
+    <value>根據財政部令 台財資字第 1020002795 號 「電子發票實施作業要點」，自 103 年 1 月 1 日起，
+&lt;b&gt;於本網站消費開立之電子發票，無實體紙本發票故不會寄送。&lt;/b&gt;
+本網站會於期限內將開立之電子發票，上傳至財政部電子發票整合服務平台留存。
+您可利用會員專區&gt;客服中心/常見問題&gt;電子發票歸戶 功能，進行會員載具歸戶作業。
+經歸戶後的中獎發票將由「財政部電子發票整合平台」進行領獎相關通知及作業；
+未歸戶的中獎發票， 將由本網站以電子郵件與簡訊通知您提供中獎發票寄送地址後，掛號寄出。
+ (電子發票及會員載具歸戶說明， 詳見財政部電子發票整合平台&lt;a&gt;https://www.einvoice.nat.gov.tw/&lt;/a&gt;)</value>
+  </data>
+  <data name="Pages_Question_GetElectronicInvoiceTitle" xml:space="preserve">
+    <value>◎ 如何索取紙本發票?</value>
+  </data>
+  <data name="Pages_Question_GetElectronicInvoiceMsg" xml:space="preserve">
+    <value>若您要索取電子發票證明聯，麻煩您至「訂單查詢&gt;點選要查詢的訂單明細&gt;發票」，
+詳閱電子發票說明並詳填您的收件資訊，客服人員將會盡速為您處理。
+&lt;br/&gt;小提醒： 商品取貨後可至「訂單查詢&gt;點選要查詢的訂單明細&gt;發票」即可查詢您的電子發票。</value>
+  </data>
+  <data name="Pages_Question_WriteElectronicInvoiceTitle" xml:space="preserve">
+    <value>◎ 有填寫統編／抬頭的發票會寄嗎?何時會寄出?</value>
+  </data>
+  <data name="Pages_Question_WriteElectronicInvoiceMsg" xml:space="preserve">
+    <value>打統編／抬頭的發票將在出貨日後十個工作天內寄出。</value>
+  </data>
+  <data name="Pages_Question_SentElectronicInvoiceTitle" xml:space="preserve">
+    <value>◎ 捐贈的發票，你們會怎麼處理?</value>
+  </data>
+  <data name="Pages_Question_SentElectronicInvoiceMsg" xml:space="preserve">
+    <value>根據財政部令 台財資字第 1020002795 號 「電子發票實施作業要點」第二十條說明，
+財政部電子發票整合平台應每二月為一期，於開獎日前，
+將買受人所捐贈之該期電子發票明細資料通知各該受捐贈機構，
+並 由財政部電子發票整合平台於對獎後，通知受捐贈機構領獎。&lt;br/&gt;另，依據法令規定，
+已捐贈的發票無法索取紙本發票及更改捐贈對象，如有退換貨需求，本公司將會將該發票作廢。</value>
+  </data>
+  <data name="Pages_Question_UniformNumbersTitle" xml:space="preserve">
+    <value>◎ 發票要加打統編或統編／抬頭填錯怎麼辦?</value>
+  </data>
+  <data name="Pages_Question_UniformNumbersMsg" xml:space="preserve">
+    <value>若您尚未收到紙本發票，麻煩您至「訂單查詢&gt;點選要查詢的訂單明細&gt;發票」，
+找出該筆訂單，點選該 筆訂單後的聯絡客服，並詳填您的需求，客服人員將會盡速為您處理。&lt;br/&gt;
+* 有統編／抬頭的發票將在出貨日後十個工作天內寄出，寄出後訂單查詢頁的發票寄送日欄位將會顯示寄 出日期。&lt;br/&gt;
+若您已收到紙本發票或紙本發票已寄出，煩請於收到發票三日內，填寫發票背面折讓單，並附上您要修改 的抬頭、統編，
+將發票寄回台北市南港區八德路四段 768 巷 5 號 6 樓九易宇軒股份有限公司會計部收， 我們將為您重開發票。
+提醒您！屆時發票將會重新配號，新的發票月份將為申請當月，發票號碼也將更新， 恕無法以原發票號碼列印。</value>
+  </data>
+  <data name="Pages_Question_HowUniformNumbersTitle" xml:space="preserve">
+    <value>◎ 我怎麼知道發票號碼?</value>
+  </data>
+  <data name="Pages_Question_HowUniformNumbersMsg" xml:space="preserve">
+    <value>在您付款完成、商品出貨後本網站就會開立發票，您可隨時到「訂單查詢&gt;點選要查詢的訂單明細&gt;發票」， 
+點入訂單明細查詢您的發票號碼。&lt;br/&gt;若您於訂購時選擇將發票捐贈，為了保障受贈單位的權益，
+捐贈發票號碼末三碼將會以*號表示。</value>
+  </data>
+  <data name="Pages_Question_WhenInvoiceAwardTitle" xml:space="preserve">
+    <value>◎ 何時會幫我的發票對獎?</value>
+  </data>
+  <data name="Pages_Question_WhenInvoiceAwardMsg" xml:space="preserve">
+    <value>每逢單月 25 日開獎後，將由「財政部電子發票整合平台」統一進行對獎作業，
+於單月 28 日收到「財政部 電子發票整合平台」提供中獎清冊後，於訂單查詢頁「發票」顯示中獎資訊。</value>
+  </data>
+  <data name="Pages_Question_HowInvoiceAwardTitle" xml:space="preserve">
+    <value>◎ 我怎麼知道我的發票中獎了?</value>
+  </data>
+  <data name="Pages_Question_HowInvoiceAwardMsgOne" xml:space="preserve">
+    <value>每逢單月 25 日開獎後，將由「財政部電子發票整合平台」統一進行對獎作業，
+於單月 28 日收到「財政部電子發票整合平台」提供中獎清冊後，於訂單查詢頁「發票」顯示中獎資訊，
+通知方式將依消費都使用發 票載具類型及載具歸戶狀態，處理方式如下：</value>
+  </data>
+  <data name="Pages_Question_HowInvoiceAwardMsgTwo" xml:space="preserve">
+    <value>使用「手機條碼載具 」或「自然人憑證載具」，中獎發票將由「財政部電子發票整合平台」進行 領獎相關通知及作業。</value>
+  </data>
+  <data name="Pages_Question_HowInvoiceAwardMsgThree" xml:space="preserve">
+    <value>使用「會員載具」&lt;br/&gt;
+發票載具已歸戶：中獎發票將由「財政部電子發票整合平台」進行領獎相關通知及作業。  &lt;br&gt;
+發票載具未歸戶：中獎發票由本網站進行，每逢單月 28 日由「財政部電子發票整合平台」提供中
+獎清冊後，由本網站以電子郵件及簡訊通知您提供中獎發票寄送地址後，掛號寄出。</value>
+  </data>
+  <data name="Pages_Question_NotInvoiceAwardTitle" xml:space="preserve">
+    <value>◎ 沒中獎的發票會寄給我嗎?</value>
+  </data>
+  <data name="Pages_Question_NotInvoiceAwardMsg" xml:space="preserve">
+    <value>根據財政部令 台財資字第 1020002795 號 「電子發票實施作業要點」，於本 網站消費開立之統一發票將 不主動寄送，
+但需於期限內上傳至整合服務平台留 存，消費者可利用財政部電子發票整合平台查詢消費紀錄。</value>
+  </data>
+  <data name="Pages_Question_CanInvoiceGiftTitle" xml:space="preserve">
+    <value>◎ 可不可以把發票改成捐贈?</value>
+  </data>
+  <data name="Pages_Question_CanInvoiceGiftMsg" xml:space="preserve">
+    <value>很抱歉!若您訂購時未選擇捐贈發票，將無法修改為捐贈發票。</value>
+  </data>
+  <data name="Pages_Question_DateOpeningTitle" xml:space="preserve">
+    <value>◎ 發票可否指定開立日期、更改品名或金額?</value>
+  </data>
+  <data name="Pages_Question_DateOpeningMsg" xml:space="preserve">
+    <value>很抱歉!訂單發票印製為系統自動作業，發票上商品名稱將依訂購的品名和金額 開立，請恕無法指定開立日 期、更改品名或金額。</value>
+  </data>
+  <data name="Pages_Question_ElectronicInvoicesHouseholds" xml:space="preserve">
+    <value>電子發票歸戶</value>
+  </data>
+  <data name="Pages_Question_MembersHouseholds" xml:space="preserve">
+    <value>會員載具歸戶</value>
+  </data>
+  <data name="Pages_Question_SmallReminder" xml:space="preserve">
+    <value>小提醒</value>
+  </data>
+  <data name="Pages_Question_ClickMembersHouseholdsMsg" xml:space="preserve">
+    <value>按下&lt;b&gt;會員載具歸戶&lt;/b&gt;，系統將自動連結至&lt;u&gt;政府電子發票平台進行歸戶</value>
+  </data>
+  <data name="Pages_Question_CompliteMembersHouseholdsMsg" xml:space="preserve">
+    <value>歸戶完成後，您即可在政府電子發票平台，查詢所有本店會員卡的電子發票</value>
+  </data>
+  <data name="Pages_Question_CompliteMembersHouseholdsMsgOne" xml:space="preserve">
+    <value>已進行歸戶的電子發票，仍可在本店查詢所有的消費明細</value>
+  </data>
+  <data name="Pages_Question_HomeInquiryMsg" xml:space="preserve">
+    <value>歸戶後的中獎發票將由財稅中心通知，本公司不再另行通知</value>
+  </data>
+  <data name="Pages_Question_HomeInquiry" xml:space="preserve">
+    <value>歸戶查詢</value>
+  </data>
+  <data name="Pages_Question_ElectronicInvoicePlatform" xml:space="preserve">
+    <value>財政部電子發票整合平台</value>
+  </data>
+  <data name="Pages_Question_ElectronicInvoicePhone" xml:space="preserve">
+    <value>財稅中心24小時免費服務電話 0800-52-1988</value>
+  </data>
+  <data name="Pages_Question_QuestionNumber" xml:space="preserve">
+    <value>問題單號</value>
+  </data>
+  <data name="Pages_Question_AskQuestion" xml:space="preserve">
+    <value>提出問題</value>
+  </data>
+  <data name="Pages_Question_CustomerServiceMessage" xml:space="preserve">
+    <value>客服留言</value>
+  </data>
+  <data name="Pages_Question_QuestionObject" xml:space="preserve">
+    <value>提問對象</value>
+  </data>
+  <data name="Pages_Question_QuestionCategory" xml:space="preserve">
+    <value>問題類別</value>
+  </data>
+  <data name="Pages_Question_OrderNumberOrProductNumber" xml:space="preserve">
+    <value>訂單編號/商品編號</value>
+  </data>
+  <data name="Pages_Question_QuestionContent" xml:space="preserve">
+    <value>問題內容</value>
+  </data>
+  <data name="Pages_Question_QuestionSend" xml:space="preserve">
+    <value>送出問題</value>
+  </data>
+  <data name="Pages_Question_QuestionSendAfter" xml:space="preserve">
+    <value>問題送出後，商店將進行回覆。</value>
+  </data>
+</root>

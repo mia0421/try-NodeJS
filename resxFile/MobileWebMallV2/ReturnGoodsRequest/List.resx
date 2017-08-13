@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pages_ReturnGoodsRequest_ReturnGoods" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_Back" xml:space="preserve">
+    <value>Return to order search</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_SelectProduct" xml:space="preserve">
+    <value>Please check the items you want to return</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReturnMsgAllOrders" xml:space="preserve">
+    <value>If an order matches a promotion, you have to return everything in it, including gifts</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReturnMsgCoupon" xml:space="preserve">
+    <value>Once returned, coupons used on these items will not be returned to you</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReturnDescription" xml:space="preserve">
+    <value>Return description</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReturnDescriptionWarning" xml:space="preserve">
+    <value>This column is required, please fill in the return description</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReturnDescriptionPrompt" xml:space="preserve">
+    <value>Please write your return description in less than 200 words</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_PickupInfo" xml:space="preserve">
+    <value>Pickup information</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_Contact" xml:space="preserve">
+    <value>Contact name</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ContactWarning" xml:space="preserve">
+    <value>This column is required, please fill in the correct recipient name</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_CellPhoneVerifi" xml:space="preserve">
+    <value>Please enter the correct mobile number</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_CellPhoneWarning" xml:space="preserve">
+    <value>This column is required, please fill in the correct mobile number</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_SelectDistrict" xml:space="preserve">
+    <value>Please choose area</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_DistrictWarning" xml:space="preserve">
+    <value>Area is required</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_DistrictMsg" xml:space="preserve">
+    <value>Taiwan address only, please don't write PO box</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_DistrictRequired" xml:space="preserve">
+    <value>Address is required</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_DistrictVerifi" xml:space="preserve">
+    <value>Address has to be 5 or more Chinese characters, letters or numbers</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_RefundType" xml:space="preserve">
+    <value>Refund method</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_RefundOfCreditCardOnce" xml:space="preserve">
+    <value>Credit card refund</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_CreditCardBankName" xml:space="preserve">
+    <value>Credit card bank</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_RefundAmount" xml:space="preserve">
+    <value>Total Refund</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_Remittance" xml:space="preserve">
+    <value>ATM transfer</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_BankAccountOwner" xml:space="preserve">
+    <value>Account Name</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_BankAccountOwnerWarning" xml:space="preserve">
+    <value>This column is required, please enter account name</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_BankName" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_EnterKeyWord" xml:space="preserve">
+    <value>Please enter code or keyword</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_PleaseChoose" xml:space="preserve">
+    <value>Please choose</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_BankNameWarning" xml:space="preserve">
+    <value>This column is required, please choose bank name</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_BankSubName" xml:space="preserve">
+    <value>Branch name</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_BankSubNameWarning" xml:space="preserve">
+    <value>This column is required, please choose branch name</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_AccountNoMsgVerifi" xml:space="preserve">
+    <value>The length is {0} characters, you have entered {1} characters, only numbers allowed</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_WrongFormat" xml:space="preserve">
+    <value>Invalid format</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_AccountNoWarning" xml:space="preserve">
+    <value>This column is required, please enter the correct account</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReturnMsgInvoice" xml:space="preserve">
+    <value>I hereby request a return and allow 91APP to handle the receipt of this order (For example: invoice or sales allowances)</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReturnMsgContact" xml:space="preserve">
+    <value>Once the return is requested, we will contact you</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReturnOrderSearch" xml:space="preserve">
+    <value>Back to my orders</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_EnterName" xml:space="preserve">
+    <value>Please fill in your Chinese full name</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_NoData" xml:space="preserve">
+    <value>No item to return at the moment</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReturnMsgService" xml:space="preserve">
+    <value>The items you purchased match a promotion, you have to return them togetherPlease contact customer service if you have any questions</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_RequiredWarning" xml:space="preserve">
+    <value>Please choose at least one item to return</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_Applied" xml:space="preserve">
+    <value>Your return has been requested</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_Gift" xml:space="preserve">
+    <value>Gift with purchase</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_Reason" xml:space="preserve">
+    <value>Reason for the order</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_EnterReason" xml:space="preserve">
+    <value>Please choose a reason</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ReasonWarning" xml:space="preserve">
+    <value>This column is required, please choose a reason</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_EnterProduct" xml:space="preserve">
+    <value>Please check {0} items you want</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_ChangeGoods" xml:space="preserve">
+    <value>Exchange</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_EnterAccount" xml:space="preserve">
+    <value>please enter your account</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_DescriptionMsg" xml:space="preserve">
+    <value>Please describe the reason of return (200 words limit)</value>
+  </data>
+  <data name="Pages_ReturnGoodsRequest_AccountNo" xml:space="preserve">
+    <value>Account No.</value>
+  </data>
+</root>

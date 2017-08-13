@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pages_ServicePage_NineYiWillBuy" xml:space="preserve">
+    <value>91mai just buy</value>
+  </data>
+  <data name="Pages_ServicePage_ServiceDescription" xml:space="preserve">
+    <value>Service description</value>
+  </data>
+  <data name="Pages_ServicePage_WillJoin" xml:space="preserve">
+    <value>Simple way to sign up</value>
+  </data>
+  <data name="Pages_ServicePage_EasyJoin" xml:space="preserve">
+    <value>Easy sign up</value>
+  </data>
+  <data name="Pages_ServicePage_AddSiteMembership" xml:space="preserve">
+    <value>You can easily sign up as our member with your Facebook account or mobile number.</value>
+  </data>
+  <data name="Pages_ServicePage_WillToBuy" xml:space="preserve">
+    <value>The best buying experience</value>
+  </data>
+  <data name="Pages_ServicePage_MultiplePayment" xml:space="preserve">
+    <value>Easy Pay</value>
+  </data>
+  <data name="Pages_ServicePage_SiteProvidesPaymentMethods" xml:space="preserve">
+    <value>We provide easy online payment methods.</value>
+  </data>
+  <data name="Pages_ServicePage_TransactionSecurityDescription" xml:space="preserve">
+    <value>To ensure the safety of online shopping, you understand that we are going to verify this purchase with the credit card bank and the cardholder. Reminder, identity theft is illegal and will be prosecuted if found.</value>
+  </data>
+  <data name="Pages_ServicePage_GoodLookingGoodBuy" xml:space="preserve">
+    <value>Easy Buy</value>
+  </data>
+  <data name="Pages_ServicePage_SearchKeyWordDescription" xml:space="preserve">
+    <value>We provide an easy way to use search engine, just enter the item or keyword and you'll find it right away!</value>
+  </data>
+  <data name="Pages_ServicePage_FastPay" xml:space="preserve">
+    <value>Quick Purchase</value>
+  </data>
+  <data name="Pages_ServicePage_FillInformationDescription" xml:space="preserve">
+    <value>During the payment procedure, when you're writing information, simply check the box that says "Save the payment and recipient information, and set it as quick purchase," to start using quick purchase.</value>
+  </data>
+  <data name="Pages_ServicePage_BuyOnceAll" xml:space="preserve">
+    <value>Buy Them All at Once</value>
+  </data>
+  <data name="Pages_ServicePage_AddShoppingCartDescription" xml:space="preserve">
+    <value>We have a huge collection of items. Anything you like, just "Add to Cart" Buy them all at once, then use quick purchase way to save you time.</value>
+  </data>
+  <data name="Pages_ServicePage_WillQuery" xml:space="preserve">
+    <value>Useful search tips</value>
+  </data>
+  <data name="Pages_ServicePage_EasyRecord" xml:space="preserve">
+    <value>Easy to record</value>
+  </data>
+  <data name="Pages_ServicePage_CommonAddresseeDescription" xml:space="preserve">
+    <value>Every piece of information you write when you order something will be recorded in "Address Book", so the next time you order you can simply choose the address you want from "Address Book".You can edit and delete "Address Book" any time.</value>
+  </data>
+  <data name="Pages_ServicePage_AtGlance" xml:space="preserve">
+    <value>Everything at a glance</value>
+  </data>
+  <data name="Pages_ServicePage_GoodHelperDescription" xml:space="preserve">
+    <value>You can see your order status,member qualification,and FAQ clearly in your account.</value>
+  </data>
+  <data name="Pages_ServicePage_MyAccount" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="Pages_ServicePage_PutShoppingCart" xml:space="preserve">
+    <value>Add to shopping cart</value>
+  </data>
+</root>

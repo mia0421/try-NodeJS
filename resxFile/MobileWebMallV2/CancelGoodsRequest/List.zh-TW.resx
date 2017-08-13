@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pages_CancelGoodsRequest_SelectProduct" xml:space="preserve">
+    <value>請勾選您要取消的商品</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_CancelMsgNotCancel" xml:space="preserve">
+    <value>已出貨之商品，恕無法在此取消</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_CancelMsgAllOrder" xml:space="preserve">
+    <value> 符合優惠活動的訂單(連同贈品)需整筆取消</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_CancelMsgCoupon" xml:space="preserve">
+    <value>取消訂單後，將不歸還已使用之折價券</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_RefundType" xml:space="preserve">
+    <value>退款方式</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_RefundOfCreditCardOnce" xml:space="preserve">
+    <value>信用卡退款</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_CreditCardBankName" xml:space="preserve">
+    <value>發卡銀行</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_RefundAmount" xml:space="preserve">
+    <value>退款金額</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_Remittance" xml:space="preserve">
+    <value>匯款</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_BankAccountOwner" xml:space="preserve">
+    <value>帳戶戶名</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_EnterAccountOwner" xml:space="preserve">
+    <value>請輸入戶名</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_BankAccountOwnerWarning" xml:space="preserve">
+    <value>此為必填欄位，請填寫帳戶戶名</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_BankName" xml:space="preserve">
+    <value>銀行名稱</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_EnterKeyWord" xml:space="preserve">
+    <value>請輸入代碼或關鍵字</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_Enter" xml:space="preserve">
+    <value>請選擇</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_BankNameWarning" xml:space="preserve">
+    <value>此為必填欄位，請選擇銀行名稱</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_BankSubName" xml:space="preserve">
+    <value>分行名稱</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_BankSubNameWarning" xml:space="preserve">
+    <value>此為必填欄位，請選擇分行名稱</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_AccountNoMsgVerifi" xml:space="preserve">
+    <value>長度為{0}碼，目前已輸入{1}碼，僅可輸入數字</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_WrongFormat" xml:space="preserve">
+    <value>格式錯誤</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_AccountNoWarning" xml:space="preserve">
+    <value>此為必填欄位，請填入正確帳號</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_CancelMsgRefundFee" xml:space="preserve">
+    <value>如果完整取消整筆訂單，將會一併退還運費</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_Back" xml:space="preserve">
+    <value>回訂單查詢</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_NoData" xml:space="preserve">
+    <value>目前沒有可以取消的商品資料</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_CancelMsgService" xml:space="preserve">
+    <value>此次購買的所有商品，因符合優惠活動，必須所有商品一起取消。如有疑問，請洽客服</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_RequiredWarning" xml:space="preserve">
+    <value>請至少選擇一項取消商品</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_Applied" xml:space="preserve">
+    <value>已為您申請取消訂單</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_EnterAccount" xml:space="preserve">
+    <value>請輸入帳號</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_ATMCancelMsg" xml:space="preserve">
+    <value>因此次使用ATM付款方式交易，無法單筆取消，一旦勾選，將取消所有商品之購買。如有贈品，亦須一同取消。</value>
+  </data>
+  <data name="Pages_CancelGoodsRequest_AccountNo" xml:space="preserve">
+    <value>帳號</value>
+  </data>
+</root>

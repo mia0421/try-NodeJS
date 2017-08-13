@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pages_Question_CustomerService" xml:space="preserve">
+    <value>Customer service</value>
+  </data>
+  <data name="Pages_Question_Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="Pages_Question_QuestionRecords" xml:space="preserve">
+    <value>Below is your question history with customer service</value>
+  </data>
+  <data name="Pages_Question_CommonProblem" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="Pages_Question_QuestionSingleNumber" xml:space="preserve">
+    <value>Question NO.</value>
+  </data>
+  <data name="Pages_Question_OrderNumber" xml:space="preserve">
+    <value>Order NO.</value>
+  </data>
+  <data name="Pages_Question_ProductNumber" xml:space="preserve">
+    <value>Item NO.</value>
+  </data>
+  <data name="Pages_Question_NotQuestionRecords" xml:space="preserve">
+    <value>You don't have anything in your question history</value>
+  </data>
+  <data name="Pages_Question_OrderProgress" xml:space="preserve">
+    <value>Order progress</value>
+  </data>
+  <data name="Pages_Question_OrderSuccessTitle" xml:space="preserve">
+    <value>◎   Is the order successful</value>
+  </data>
+  <data name="Pages_Question_OrderSuccessMsg" xml:space="preserve">
+    <value>When an order is made, the system will send you an Order Confirmation email to confirm the information of the order, including its details and recipient information.</value>
+  </data>
+  <data name="Pages_Question_OrderProgressTitle" xml:space="preserve">
+    <value>◎   How do I track the order progress</value>
+  </data>
+  <data name="Pages_Question_OrderProgressMsg" xml:space="preserve">
+    <value>You can search the delivery progress of an item in "My Account&gt;Order Search."</value>
+  </data>
+  <data name="Pages_Question_OrderCancelTitle" xml:space="preserve">
+    <value>◎   How do I cancel an order</value>
+  </data>
+  <data name="Pages_Question_OrderCancelMsg" xml:space="preserve">
+    <value>Before an item is shipped, you can go to "My Account&gt;Order Search" and click "Cancel Order."</value>
+  </data>
+  <data name="Pages_Question_ReturnsOrRefundInstructions" xml:space="preserve">
+    <value>Return/exchange/refund instructions</value>
+  </data>
+  <data name="Pages_Question_ReturnsProductTitle" xml:space="preserve">
+    <value>◎   Return/exchange instructions</value>
+  </data>
+  <data name="Pages_Question_ReturnsProductMsg" xml:space="preserve">
+    <value>Please read "Shopping instructions&gt;Return/exchange instructions."</value>
+  </data>
+  <data name="Pages_Question_RefundInstructionsTitle" xml:space="preserve">
+    <value>◎   Refund: The refund method will be the same as your payment method</value>
+  </data>
+  <data name="Pages_Question_RefundCreditCardMsg" xml:space="preserve">
+    <value>Credit card: if you used credit card to pay, we will return the payment to the account of the credit card you used to pay.</value>
+  </data>
+  <data name="Pages_Question_RefundSuperPickupMsg" xml:space="preserve">
+    <value>Convenience store/supermarket pickup payment: If you used the convenience store/supermarket pickup payment, please write the correct refund account information on your return request according to the return/refund page. Once the shop has confirmed the return, we will give you your refund to your account within 7 business days.</value>
+  </data>
+  <data name="Pages_Question_ECouponNotes" xml:space="preserve">
+    <value>About coupons</value>
+  </data>
+  <data name="Pages_Question_ECouponTitle" xml:space="preserve">
+    <value>◎   My Coupons</value>
+  </data>
+  <data name="Pages_Question_ECouponMsg" xml:space="preserve">
+    <value>Go to "My Account&gt;My Coupons" to search coupons or enter coupon codes.</value>
+  </data>
+  <data name="Pages_Question_ECouponUseTitle" xml:space="preserve">
+    <value>◎   How to use coupons</value>
+  </data>
+  <data name="Pages_Question_ECouponUseMsg" xml:space="preserve">
+    <value>When you're checking out, click use coupons or enter coupon codes to get discounts!</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleTitle" xml:space="preserve">
+    <value>◎   Rules for using coupons</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleOne" xml:space="preserve">
+    <value>1. Only one couple allowed for each shop, each time you check out.</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleTow" xml:space="preserve">
+    <value>2. No more than 30% discount of total purchase amount is allowed.</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleThree" xml:space="preserve">
+    <value>3. If an item is marked as "Coupons not applicable," you can't use coupons on it.</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleFour" xml:space="preserve">
+    <value>4. Coupons can be used only once and should not be used as cash, once used they cannot be restored.</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleFive" xml:space="preserve">
+    <value>5. When an order is cancelled or returned, the coupons used on it will become invalid and will not be returned to you.</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleSix" xml:space="preserve">
+    <value>6. Coupons expire, and when they do they can no longer be used or restored.</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleSeven" xml:space="preserve">
+    <value>7. Coupons can't be used on shipping.</value>
+  </data>
+  <data name="Pages_Question_ECouponRuleEight" xml:space="preserve">
+    <value>8. Coupons are compatible with other discounts in the shop.</value>
+  </data>
+  <data name="Pages_Question_ElectronicInvoiceDescription" xml:space="preserve">
+    <value>E-invoice instructions</value>
+  </data>
+  <data name="Pages_Question_NotElectronicInvoiceTitle" xml:space="preserve">
+    <value>◎ Why didn't I receive my invoice?</value>
+  </data>
+  <data name="Pages_Question_NotElectronicInvoiceMsg" xml:space="preserve">
+    <value>According to Decree No. 1020002795, the Implementation Guidelines of E-invoices, issued by the Ministry of Finance, effective since January 1, 2014, E-invoices issued by our website do not come in physical form so we won't send you any. We do upload the E-invoices to the E-invoice Platform, Ministry of Finance within a certain period of time. You can go to Member area&gt;Customer service/FAQ&gt;E-invoice return to have it returned to your carrier. Winning invoices that are returned will be notified by the E-invoice Platform, Ministry of Finance to collect the prize; Winning invoices that are not returned will be notified by us via emails and text messages, and we will ask for your address to mail them to you. (For details on E-invoices and member carriers, please visit the E-invoice Platform, Ministry of Finance https://www.einvoice.nat.gov.tw/)</value>
+  </data>
+  <data name="Pages_Question_GetElectronicInvoiceTitle" xml:space="preserve">
+    <value>◎ How do I get physical invoices?</value>
+  </data>
+  <data name="Pages_Question_GetElectronicInvoiceMsg" xml:space="preserve">
+    <value>If you want the E-invoice certificate please go to "Order search&gt;Click the order details&gt;Invoice,"read the E-invoice instructions and write your recipient information. The customer service will work on it right away.Reminder: After you have picked up your item you can go to "Order sear&gt;Click the order details&gt;Invoice" to search your E-invoice.</value>
+  </data>
+  <data name="Pages_Question_WriteElectronicInvoiceTitle" xml:space="preserve">
+    <value>◎ Can I get the invoice with Unified Business No./title? When do I get it?</value>
+  </data>
+  <data name="Pages_Question_WriteElectronicInvoiceMsg" xml:space="preserve">
+    <value>Invoice with Unified Business No./title will be sent 10 days after the item was shipped.</value>
+  </data>
+  <data name="Pages_Question_SentElectronicInvoiceTitle" xml:space="preserve">
+    <value>◎ What do you do with donated invoices?</value>
+  </data>
+  <data name="Pages_Question_SentElectronicInvoiceMsg" xml:space="preserve">
+    <value>According to Article 20 of Decree No. 1020002795, the Implementation Guidelines of E-invoices, that once every two months, the E-invoice Platform, Ministry of Finance should reveal the details of the invoice to organization the buyer chose to donate to before the winning numbers are announced, and notify them of the prizes if they have won. Also, according to the law, you can’t ask for physical copies of donated invoices or change whom you donate to. If you request a return or exchange, we will treat the invoice as invalid. </value>
+  </data>
+  <data name="Pages_Question_UniformNumbersTitle" xml:space="preserve">
+    <value>What to do when I want to add Unified Business No. for my invoice, or when there is a typo in the Unified Business No./title?</value>
+  </data>
+  <data name="Pages_Question_UniformNumbersMsg" xml:space="preserve">
+    <value>If you have not yet received the physical invoice, please go to “Order search&gt;Click the order details you want&gt;Invoice” to find the order, click it and tell customer service your need, we will work on it right away. *Invoices with Unified Business No./titles will be sent to you within 10 days after shipping, the send date will then show up on the order search page. If you have received the physical invoice or that it has already been sent, please fill in the debit note on the back of the invoice with the title or Unified Business No. you want to change and send it to 91mai Accounting Department, at 6F, No. 5, Lane 768, Section 4, Bade Rd, Nangang District, Taipei City, 115, within 3 days. We will issue another invoice for you. Reminder, the new invoice will have a new number, and its issue month might change too. Sorry for the inconvenience. </value>
+  </data>
+  <data name="Pages_Question_HowUniformNumbersTitle" xml:space="preserve">
+    <value>◎ How do I know the invoice number?</value>
+  </data>
+  <data name="Pages_Question_HowUniformNumbersMsg" xml:space="preserve">
+    <value>An invoice is issued right after the payment is made and item is shipped. You can go to “Order search&gt;Click the order details you want&gt;Invoice” anytime to search for your invoice number. If you chose to donate the invoice when you made your order, the last 3 digits of the donated invoice number will be displayed in asterix(*) to protect the rights and interests of the recipient.</value>
+  </data>
+  <data name="Pages_Question_WhenInvoiceAwardTitle" xml:space="preserve">
+    <value>◎ When will you check my invoice to see if I have won?</value>
+  </data>
+  <data name="Pages_Question_WhenInvoiceAwardMsg" xml:space="preserve">
+    <value>On the 25th of every odd-numbered month, the E-invoice platform, Ministry of Finance will do all the checking, and on the 28th, when we receive the winning numbers from them, the information will be shown on the Order search page, Invoice. </value>
+  </data>
+  <data name="Pages_Question_HowInvoiceAwardTitle" xml:space="preserve">
+    <value>◎ How do I know whether or not my invoice has won?</value>
+  </data>
+  <data name="Pages_Question_HowInvoiceAwardMsgOne" xml:space="preserve">
+    <value>On the 25th of every odd-numbered month, the E-invoice platform, Ministry of Finance will do all the checking, and on the 28th, when we receive the winning numbers from them, the information will be shown on the Order search page, Invoice. Notification method will depend on invoice carrier type and carrier returning status, as follows:</value>
+  </data>
+  <data name="Pages_Question_HowInvoiceAwardMsgTwo" xml:space="preserve">
+    <value>Using “Mobile barcode carrier” or “Natural person credential carrier,” the winning invoices will be notified by the E-invoice Platform, Ministry of Finance, to receive the prize. </value>
+  </data>
+  <data name="Pages_Question_HowInvoiceAwardMsgThree" xml:space="preserve">
+    <value>Use Member CarrierInvoice carrier has been returned: Winning numbers will be announced on the E-invoice Platform, Ministry of Finance. Invoice carrier not yet returned: Winners will be informed by us after the E-invoice Platform, Ministry of Finance has announced the winning numbers on the 28th of every odd numbered month. We will ask for your address through email and text message, then send the winning invoice to you by mail.</value>
+  </data>
+  <data name="Pages_Question_NotInvoiceAwardTitle" xml:space="preserve">
+    <value>◎ Will I get the invoices back if they didn't win?</value>
+  </data>
+  <data name="Pages_Question_NotInvoiceAwardMsg" xml:space="preserve">
+    <value>According to Decree No. 1020002795, the Implementation Guidelines of E-invoices, issued by the Ministry of Finance, we don't proactively send invoices to our customers, but we have to upload them to the integrated service platform within a certain period of time, so you can still search your purchase history on the E-invoice Platform, Ministry of Finance.</value>
+  </data>
+  <data name="Pages_Question_CanInvoiceGiftTitle" xml:space="preserve">
+    <value>◎ Can I donate my invoice?</value>
+  </data>
+  <data name="Pages_Question_CanInvoiceGiftMsg" xml:space="preserve">
+    <value>We are sorry! If you didn't choose to donate your invoice when you make your purchase, you can't change it now</value>
+  </data>
+  <data name="Pages_Question_DateOpeningTitle" xml:space="preserve">
+    <value>◎ Can I choose the issue date of the invoice, change the name of the item or its price?</value>
+  </data>
+  <data name="Pages_Question_DateOpeningMsg" xml:space="preserve">
+    <value>We are sorry! The invoice for your order is printed by the system automatically. The name and price of the item will stay the way it is, so please understand that you can't choose the date, change the name or price.</value>
+  </data>
+  <data name="Pages_Question_ElectronicInvoicesHouseholds" xml:space="preserve">
+    <value>Return E-invoice</value>
+  </data>
+  <data name="Pages_Question_MembersHouseholds" xml:space="preserve">
+    <value>Return Member carrier</value>
+  </data>
+  <data name="Pages_Question_SmallReminder" xml:space="preserve">
+    <value>Reminder</value>
+  </data>
+  <data name="Pages_Question_ClickMembersHouseholdsMsg" xml:space="preserve">
+    <value>Press Return Member Carrier, and you will be redirected to the E-invoice Platform for the return</value>
+  </data>
+  <data name="Pages_Question_CompliteMembersHouseholdsMsg" xml:space="preserve">
+    <value>Once returned, you can immediately search all invoices of this membership card on the E-invoice Platform.</value>
+  </data>
+  <data name="Pages_Question_CompliteMembersHouseholdsMsgOne" xml:space="preserve">
+    <value>Details of returned e-invoices can still be searched on our website</value>
+  </data>
+  <data name="Pages_Question_HomeInquiryMsg" xml:space="preserve">
+    <value>Winning invoices that are returned will be notified by the Financial Data Center, not by us.</value>
+  </data>
+  <data name="Pages_Question_HomeInquiry" xml:space="preserve">
+    <value>Return search</value>
+  </data>
+  <data name="Pages_Question_ElectronicInvoicePlatform" xml:space="preserve">
+    <value>E-invoice Platform, Ministry of Finance</value>
+  </data>
+  <data name="Pages_Question_ElectronicInvoicePhone" xml:space="preserve">
+    <value>Free Financial Data Center 24h service number 0800-52-1988</value>
+  </data>
+  <data name="Pages_Question_QuestionNumber" xml:space="preserve">
+    <value>Question NO.</value>
+  </data>
+  <data name="Pages_Question_AskQuestion" xml:space="preserve">
+    <value>Ask</value>
+  </data>
+  <data name="Pages_Question_CustomerServiceMessage" xml:space="preserve">
+    <value>Customer service message</value>
+  </data>
+  <data name="Pages_Question_QuestionObject" xml:space="preserve">
+    <value>To whom are you asking</value>
+  </data>
+  <data name="Pages_Question_QuestionCategory" xml:space="preserve">
+    <value>Question type</value>
+  </data>
+  <data name="Pages_Question_OrderNumberOrProductNumber" xml:space="preserve">
+    <value>Order NO. / Item NO.</value>
+  </data>
+  <data name="Pages_Question_QuestionContent" xml:space="preserve">
+    <value>Question content</value>
+  </data>
+  <data name="Pages_Question_QuestionSend" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Pages_Question_QuestionSendAfter" xml:space="preserve">
+    <value>Once the question is sent, the shop will reply. </value>
+  </data>
+</root>

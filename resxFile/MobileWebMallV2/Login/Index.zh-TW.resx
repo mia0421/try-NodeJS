@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Pages_Login_SuccessLogin" xml:space="preserve">
+    <value>登入成功</value>
+  </data>
+  <data name="Pages_Login_FacebookServiceMsg" xml:space="preserve">
+    <value>Facebook服務忙碌中!請稍候再試!</value>
+  </data>
+  <data name="Pages_Login_LoginMember" xml:space="preserve">
+    <value>登入會員</value>
+  </data>
+  <data name="Pages_Login_SignupAccount" xml:space="preserve">
+    <value>註冊帳號</value>
+  </data>
+  <data name="Pages_Login_MobileNumberTip" xml:space="preserve">
+    <value>請輸入手機號碼</value>
+  </data>
+  <data name="Pages_Login_MobileNumber" xml:space="preserve">
+    <value>手機號碼</value>
+  </data>
+  <data name="Pages_Login_MobileNumberTwTip" xml:space="preserve">
+    <value>請使用台灣地區手機號碼，例如：0912345678</value>
+  </data>
+  <data name="Pages_Login_LimitNumberTip" xml:space="preserve">
+    <value>請輸入6-20碼英數字</value>
+  </data>
+  <data name="Pages_Login_Password" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+  <data name="Pages_Login_LimitNumberEnTip" xml:space="preserve">
+    <value>請輸入6~20碼英數字密碼</value>
+  </data>
+  <data name="Pages_Login_Login" xml:space="preserve">
+    <value>登入</value>
+  </data>
+  <data name="Pages_Login_RememberMe" xml:space="preserve">
+    <value>記住我</value>
+  </data>
+  <data name="Pages_Login_ForgotPassword" xml:space="preserve">
+    <value>忘記密碼</value>
+  </data>
+  <data name="Pages_Login_HavingAccountMsg" xml:space="preserve">
+    <value>擁有帳號即表示你同意&lt;a&gt;會員權益聲明&lt;/a&gt;與&lt;a&gt;隱私權條款&lt;a/&gt;</value>
+  </data>
+  <data name="Pages_Login_JoinMember" xml:space="preserve">
+    <value>加入專屬會員</value>
+  </data>
+  <data name="Pages_Login_VerificationMsg" xml:space="preserve">
+    <value>我們將發送簡訊驗證碼至您的手機內</value>
+  </data>
+  <data name="Pages_Login_MobileNumberNext" xml:space="preserve">
+    <value>輸入手機號碼下一步</value>
+  </data>
+  <data name="Pages_Login_SuccessSignup" xml:space="preserve">
+    <value>註冊成功</value>
+  </data>
+  <data name="Pages_Login_Complete" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Pages_Login_FBMobileNumberNext" xml:space="preserve">
+    <value>FB手機號碼下一步</value>
+  </data>
+  <data name="Pages_Login_ThirdPartyMobileNumberNext" xml:space="preserve">
+    <value>ThirdParty手機號碼下一步</value>
+  </data>
+  <data name="Pages_Login_PhoneReady" xml:space="preserve">
+    <value>請準備好您的手機</value>
+  </data>
+  <data name="Pages_Login_NumberAlreadyMsg" xml:space="preserve">
+    <value>此號碼已成為會員，請確認輸入的手機號碼&lt;br/&gt;或重新登入</value>
+  </data>
+  <data name="Pages_Login_ReceiveVerificationMsg" xml:space="preserve">
+    <value>收到簡訊驗證碼後，請依照步驟完成驗證註冊</value>
+  </data>
+  <data name="Pages_Login_HaveAccount" xml:space="preserve">
+    <value>已有帳號</value>
+  </data>
+  <data name="Pages_Login_VerificationCodeHasBeenSent" xml:space="preserve">
+    <value>已發送簡訊驗證碼到您的手機</value>
+  </data>
+  <data name="Pages_Login_LimitVerificationCode" xml:space="preserve">
+    <value>請輸入簡訊內4位數驗證碼</value>
+  </data>
+  <data name="Pages_Login_VerificationCode" xml:space="preserve">
+    <value>驗證碼</value>
+  </data>
+  <data name="Pages_Login_InvalidVerificationCode" xml:space="preserve">
+    <value>驗證碼錯誤</value>
+  </data>
+  <data name="Pages_Login_Patient" xml:space="preserve">
+    <value>收不到簡訊?</value>
+  </data>
+  <data name="Pages_Login_PleaseBePatient" xml:space="preserve">
+    <value>請耐心等候</value>
+  </data>
+  <data name="Pages_Login_ResendVerificationCode" xml:space="preserve">
+    <value>重發驗證碼</value>
+  </data>
+  <data name="Pages_Login_UseDialVerification" xml:space="preserve">
+    <value>請使用撥號驗證</value>
+  </data>
+  <data name="Pages_Login_DialVerification" xml:space="preserve">
+    <value>手機撥號認證</value>
+  </data>
+  <data name="Pages_Login_UseDialMobileVerification" xml:space="preserve">
+    <value>使用手機撥號驗證功能</value>
+  </data>
+  <data name="Pages_Login_SystemServiceTip" xml:space="preserve">
+    <value>通話與系統服務費用將由電信業者收取</value>
+  </data>
+  <data name="Pages_Login_CreateloginPassword" xml:space="preserve">
+    <value>設定登入密碼</value>
+  </data>
+  <data name="Pages_Login_SignupAlmostComplete" xml:space="preserve">
+    <value>您的註冊即將完成</value>
+  </data>
+  <data name="Pages_Login_OfficialWebsiteAccount" xml:space="preserve">
+    <value>請輸入原{0}官網帳號</value>
+  </data>
+  <data name="Pages_Login_UserExperienceMsg" xml:space="preserve">
+    <value>為了讓您擁有更佳的使用體驗與系統安全</value>
+  </data>
+  <data name="Pages_Login_BoundleMobileNumber" xml:space="preserve">
+    <value> 登入成功後，將與您手機進行綁定</value>
+  </data>
+  <data name="Pages_Login_ContactCustomerService" xml:space="preserve">
+    <value>請洽詢客服</value>
+  </data>
+  <data name="Pages_Login_FirstTimeLogin" xml:space="preserve">
+    <value>首次登入請以您的手機完成手機號碼驗證</value>
+  </data>
+  <data name="Pages_Login_MobileNumberIsUsername" xml:space="preserve">
+    <value>您的手機號碼就是登入帳號</value>
+  </data>
+  <data name="Pages_Login_FreeSignup" xml:space="preserve">
+    <value>免費註冊</value>
+  </data>
+  <data name="Pages_Login_OriginalPassword" xml:space="preserve">
+    <value>請輸入原{0}官網密碼</value>
+  </data>
+  <data name="Pages_Login_Title" xml:space="preserve">
+    <value>會員登入</value>
+  </data>
+</root>
