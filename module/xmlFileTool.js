@@ -5,7 +5,6 @@ var Q = require('q');
 
 var parser = new xml2js.Parser();
 
-
 // 取得folder結構
 var tool = (name, path) => {
     var deferred = Q.defer();

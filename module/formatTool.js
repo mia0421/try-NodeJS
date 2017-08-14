@@ -1,4 +1,4 @@
-var xmlFileTool = require('./xmlFileTool');
+
 
 var tool = {
     // 整理成頁面呈現用json資料
@@ -28,6 +28,6 @@ var tool = {
             return languageItem;
         });
     }
-}
+};
 
 module.exports = tool;

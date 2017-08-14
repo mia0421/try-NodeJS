@@ -1,6 +1,6 @@
 var express = require('express');
 var xmlTool = require('../module/xmlFileTool');
-var formtTool = require('../module/formtTool');
+var formatTool = require('../module/formatTool');
 
 var router = express.Router();
 
@@ -9,7 +9,7 @@ router.get('/GetDir', (req, res) => {
     // todo 抽成config
     xmlTool.renderAllFolder("./resxFile")
         .then((folderList) => {
-            res.json(formtTool.getFolderViewJson(folderList));
+            res.json(formatTool.getFolderViewJson(folderList));
         });
 });
 
@@ -17,7 +17,7 @@ router.get('/GetDir', (req, res) => {
 router.post('/GetXmlData', (req, res) => {
     xmlTool.renderResx(req.body)
         .then((data) => {
-            res.json(formtTool.getFileViewJson(data));
+            res.json(formatTool.getFileViewJson(data));
         });
 });
 
