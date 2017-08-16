@@ -83,7 +83,7 @@ var xmlTool = {
     },
 
     // 尋找某一語系檔所有語系檔案名稱
-    seatchFiles: (fileName, filePath) => {
+    searchFile: (fileName, filePath) => {
         var deferred = Q.defer();
         var name = fileName.split('.')[0];
         xmlTool.renderFolder(filePath).then((fileList) => {
@@ -116,7 +116,7 @@ var xmlTool = {
     // 取得該檔案所有語系資料
     renderResx: (fileData) => {
         var deferred = Q.defer();
-        xmlTool.seatchFiles(fileData.Name, fileData.Path).then((filePathList) => {
+        xmlTool.searchFile(fileData.Name, fileData.Path).then((filePathList) => {
             var QLsit = [];
             filePathList.forEach((fileName) => {
                 QLsit.push(xmlTool.renderFile(fileName, fileData.Path));

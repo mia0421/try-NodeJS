@@ -2,11 +2,11 @@ var express = require('express');
 var xmlTool = require('../module/xmlFileTool');
 var formatTool = require('../module/formatTool');
 
+// 把路由包裝成模組
 var router = express.Router();
 
 // 取得資料夾結構
 router.get('/GetDir', (req, res) => {
-    // todo 抽成config
     xmlTool.renderAllFolder("./resxFile")
         .then((folderList) => {
             res.json(formatTool.getFolderViewJson(folderList));
