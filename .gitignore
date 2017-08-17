@@ -3,7 +3,6 @@
 *.vspscc
 *.scc
 Tmp
-bin
 obj
 TestResults
 Logs
