@@ -5,15 +5,26 @@
     <script src="/javascripts/angular.js"></script>
     <script src="/javascripts/app.js"></script>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <style>
         body {
             padding: 20px 50px;
         }
 
+        ul {
+            padding-left: 26px;
+            list-style: none;
+            color: black;
+        }
+
+        td {
+            position: relative;
+        }
+
         .content {
             display: flex;
+            margin-top: 20px;
         }
 
         .contentR {
@@ -24,11 +35,18 @@
             flex: 1;
         }
 
-        ul {
-            padding-left: 26px;
-            list-style: none;
-            color: black;
+        .trTool:hover .btnRow {
+            display: block;
         }
+
+        .btnRow {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 5px;
+
+        }
+
         .file {
             color: #337ab7;
             cursor: pointer;
@@ -36,21 +54,12 @@
     </style>
 </head>
 <body ng-app="app" ng-controller="myCtrl">
-<h5></h5>
-
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" >
-                <%= title %>
-            </a>
-        </div>
-    </div>
+<nav class="navbar navbar-light bg-light">
+    <span class="h3" class="navbar-brand mb-0"><%= title %></span>
 </nav>
-
 <div class="content">
     <div class="contentL">
-        <ul>
+        <ul style="padding-left: 15px">
             <li ng-repeat="ItemV1 in FolderList" ng-if="!ItemV1.IsFolder||ItemV1.ChildList.length!==0">
                 <span ng-click="GetXmlData(ItemV1)" ng-class="{'file':!ItemV1.IsFolder}">{{ItemV1.Name}}</span>
                 <ul ng-if="ItemV1.IsFolder&&ItemV1.ChildList.length!==0">
@@ -75,16 +84,29 @@
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="Item in FileList">
+            <tr ng-repeat="Item in FileList" class="trTool">
                 <td>
                     {{Item.Key}}
                 </td>
-                <td ng-repeat="val in Item.Val">
-                    {{val.Txt}}
+                <td ng-repeat="Language in LanguageList track by $index">
+                    <div ng-hide="Item.isEdit">
+                        <span > {{Item.Val[Language]}} </span>
+                        <div class="btnRow" ng-if="$last">
+                            <button type="button" class="btn btn-info" ng-click="edit(Item)">Edit</button>
+                        </div>
+                    </div>
+                    <div ng-show="Item.isEdit">
+                        <input type="text"  ng-model="Item.Val[Language]" />
+                        <div class="btnRow" ng-if="$last">
+                            <button type="button" class="btn btn-success" ng-click="save(Item)">Save</button>
+                            <button type="button" class="btn btn-secondary" ng-click="Item.isEdit=!Item.isEdit">取消</button>
+                        </div>
+                    </div>
+
+
                 </td>
             </tr>
             </tbody>
-
         </table>
     </div>
 </div>

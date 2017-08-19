@@ -18,6 +18,17 @@ router.post('/GetXmlData', (req, res) => {
     xmlTool.renderResx(req.body)
         .then((data) => {
             res.json(formatTool.getFileViewJson(data));
+        },()=>{
+            res.sendStatus(500);
+        });
+});
+
+router.post('/EditXmlData', (req, res) => {
+    xmlTool.updateResxFile(req.body.FileName, req.body.FilePath, req.body.Key, req.body.Val)
+        .then(() => {
+            res.sendStatus(200);
+        }, (err) => {
+            res.sendStatus(500).send(err);
         });
 });
 

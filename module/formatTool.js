@@ -1,5 +1,4 @@
 
-
 var tool = {
     // 整理成頁面呈現用json資料
     getFolderViewJson: (dirList) => {
@@ -10,7 +9,7 @@ var tool = {
                     item.ChildList = root(item.ChildList);
                     return true;
                 } else {
-                    return item.Name.split('.').length === 2;
+                    return item.Name.split('.').length === 1;
                 }
             });
         }
@@ -20,9 +19,10 @@ var tool = {
     getFileViewJson: (languageList) => {
         return languageList.map((languageItem) => {
             languageItem.Data = languageItem.Data.map((item) => {
+
                 return {
-                    Key:item.$.name,
-                    Val:item.value[0]
+                    Key: item.$.name,
+                    Val: item.value[0]
                 }
             });
             return languageItem;

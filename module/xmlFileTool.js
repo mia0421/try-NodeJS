@@ -4,6 +4,7 @@ var xml2js = require('xml2js');
 var Q = require('q');
 
 var parser = new xml2js.Parser();
+var builder = new xml2js.Builder();
 
 // 取得folder結構
 var tool = (name, path) => {
@@ -37,7 +38,7 @@ var tool = (name, path) => {
     } else {
         if (fsPath.extname(name) === ".resx") {
             List.push({
-                Name: name,
+                Name: fsPath.basename(name, '.resx'),
                 Path: path,
                 IsFolder: false,
                 ChildList: []
@@ -85,10 +86,9 @@ var xmlTool = {
     // 尋找某一語系檔所有語系檔案名稱
     searchFile: (fileName, filePath) => {
         var deferred = Q.defer();
-        var name = fileName.split('.')[0];
         xmlTool.renderFolder(filePath).then((fileList) => {
             deferred.resolve(fileList.filter((item) => {
-                return fsPath.extname(item) === ".resx" && item.indexOf(name) >= 0;
+                return fsPath.extname(item) === ".resx" && item.indexOf(fileName) >= 0;
             }));
         });
         return deferred.promise;
@@ -108,7 +108,7 @@ var xmlTool = {
                 });
             } else {
                 //error
-                deferred.resolve({});
+                deferred.reject("parse xml string error");
             }
         });
         return deferred.promise;
@@ -128,6 +128,8 @@ var xmlTool = {
                     list = list.concat(item);
                 });
                 deferred.resolve(list);
+            }, (err) => {
+                deferred.reject(err);
             });
         });
 
@@ -135,8 +137,45 @@ var xmlTool = {
     },
 
     // 更新特定File資料
-    updateFile: () => {
+    updateFile: (fileName, filePath, key, language, val) => {
+        var deferred = Q.defer();
+        var name = language === 'Default' ? `${fileName}.resx` : `${fileName}.${language}.resx`;
+        var path = fsPath.join(filePath, name);
+        var xmlData = fs.readFileSync(path);
+        var xmlBuilder;
 
+        parser.parseString(xmlData, (err, xmlObj) => {
+            xmlObj.root.data.forEach((value) => {
+                if (value.$.name === key) {
+                    value.value[0] = val;
+                }
+            });
+            xmlBuilder = builder.buildObject(xmlObj);
+            fs.writeFile('./' + path, xmlBuilder, () => {
+                if (err) {
+                    deferred.reject();
+                } else {
+                    deferred.resolve();
+                }
+            });
+        });
+        return deferred.promise;
+    },
+    // 更新該檔案所有語系資料
+    updateResxFile: (fileName, filePath, Key, LanguageValObj) => {
+        var deferred = Q.defer();
+        var qList = [];
+        Object.keys(LanguageValObj).forEach((objkey) => {
+            qList.push(xmlTool.updateFile(fileName, filePath, Key, objkey, LanguageValObj[objkey]));
+        });
+
+        Q.all(qList).then((result) => {
+            console.log(result);
+            deferred.resolve();
+        }, () => {
+            deferred.reject();
+        });
+        return deferred.promise;
     }
 };
 

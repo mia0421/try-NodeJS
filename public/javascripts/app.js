@@ -5,6 +5,7 @@ app.controller('myCtrl', function ($scope, $http) {
     $scope.FileList = [];
     $scope.LanguageList = [];
     $scope.SearchFile = "";
+    $scope.CurrentFile = "";
 
     $scope.GetDir = function () {
         $http.get('/api/GetDir').then(function (result) {
@@ -14,6 +15,7 @@ app.controller('myCtrl', function ($scope, $http) {
         });
     };
     $scope.GetXmlData = function (selectFile) {
+        $scope.CurrentFile = selectFile;
         if (!selectFile.IsFolder) {
             $http.post('/api/GetXmlData', selectFile).then(function (result) {
                 $scope.FileList = $scope.formatXmlData(result.data);
@@ -23,7 +25,6 @@ app.controller('myCtrl', function ($scope, $http) {
             $scope.FileList = [];
         }
     };
-
     $scope.formatXmlData = function (fileList) {
         var FileList = [];
         $scope.LanguageList = [];
@@ -39,20 +40,42 @@ app.controller('myCtrl', function ($scope, $http) {
                 if (indexNum === -1) {
                     FileList.push({
                         Key: item.Key,
-                        Val: [{
-                            language: languageItem.Language,
-                            Txt: item.Val,
-                        }]
+                        Val: {
+                            [languageItem.Language]: item.Val
+                        },
+                        isEdit: false
                     });
                 } else {
-                    FileList[indexNum].Val.push({
-                        language: languageItem.Language,
-                        Txt: item.Val,
-                    });
+                    FileList[indexNum].Val[languageItem.Language] = item.Val;
+
                 }
             });
         });
         return FileList;
+    };
+
+    $scope.edit = function (Item) {
+        Item.isEdit = true;
+    };
+    $scope.save = function (Item) {
+        console.log( {
+            FileName:$scope.CurrentFile.Name,
+            FilePath:$scope.CurrentFile.Path,
+            Key:Item.Key,
+            Val:Item.Val
+        });
+        $http.post('/api/EditXmlData', {
+                FileName:$scope.CurrentFile.Name,
+                FilePath:$scope.CurrentFile.Path,
+                Key:Item.Key,
+                Val:Item.Val
+            })
+            .then(function () {
+                console.log("Success");
+                Item.isEdit = false;
+            }, function () {
+                console.log("Error");
+            });
     };
     //初始
     $scope.GetDir();
