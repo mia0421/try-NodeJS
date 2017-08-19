@@ -151,7 +151,7 @@ var xmlTool = {
                 }
             });
             xmlBuilder = builder.buildObject(xmlObj);
-            fs.writeFile('./' + path, xmlBuilder, () => {
+            fs.writeFile(path, xmlBuilder, () => {
                 if (err) {
                     deferred.reject();
                 } else {
