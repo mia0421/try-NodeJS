@@ -2,6 +2,7 @@ var app = angular.module('app', []);
 
 app.controller('myCtrl', function ($scope, $http) {
     $scope.FolderList = [];
+    $scope.FolderData = [];
     $scope.FileList = [];
     $scope.LanguageList = [];
     $scope.SearchFile = "";
@@ -9,7 +10,8 @@ app.controller('myCtrl', function ($scope, $http) {
 
     $scope.GetDir = function () {
         $http.get('/api/GetDir').then(function (result) {
-            $scope.FolderList = result.data;
+            $scope.FolderData = result.data;
+            $scope.FolderList = angular.copy($scope.FolderData);
         }, function () {
 
         });
@@ -53,23 +55,42 @@ app.controller('myCtrl', function ($scope, $http) {
         });
         return FileList;
     };
+    $scope.select = function () {
+        var tool = function (key, list) {
+            var result = [];
+            list.forEach(function (item) {
+                if (item.IsFolder) {
+                    result = result.concat(tool(key,item.ChildList));
+                } else {
+                    if (item.Name.toLowerCase().indexOf(key.toLowerCase()) >= 0) result.push(item);
+                }
+            });
+            return result;
+        };
+        if ($scope.SearchFile) {
+           $scope.FolderList =  tool($scope.SearchFile,$scope.FolderData);
+        } else {
+            $scope.FolderList = angular.copy($scope.FolderData);
+        }
+        console.log($scope.FolderList);
+    };
 
     $scope.edit = function (Item) {
         Item.isEdit = true;
     };
     $scope.save = function (Item) {
-        console.log( {
-            FileName:$scope.CurrentFile.Name,
-            FilePath:$scope.CurrentFile.Path,
-            Key:Item.Key,
-            Val:Item.Val
+        console.log({
+            FileName: $scope.CurrentFile.Name,
+            FilePath: $scope.CurrentFile.Path,
+            Key: Item.Key,
+            Val: Item.Val
         });
         $http.post('/api/EditXmlData', {
-                FileName:$scope.CurrentFile.Name,
-                FilePath:$scope.CurrentFile.Path,
-                Key:Item.Key,
-                Val:Item.Val
-            })
+            FileName: $scope.CurrentFile.Name,
+            FilePath: $scope.CurrentFile.Path,
+            Key: Item.Key,
+            Val: Item.Val
+        })
             .then(function () {
                 console.log("Success");
                 Item.isEdit = false;

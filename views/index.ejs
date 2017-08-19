@@ -56,9 +56,13 @@
 <body ng-app="app" ng-controller="myCtrl">
 <nav class="navbar navbar-light bg-light">
     <span class="h3" class="navbar-brand mb-0"><%= title %></span>
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" ng-change="select()" ng-model="SearchFile" >
+    </form>
 </nav>
 <div class="content">
     <div class="contentL">
+
         <ul style="padding-left: 15px">
             <li ng-repeat="ItemV1 in FolderList" ng-if="!ItemV1.IsFolder||ItemV1.ChildList.length!==0">
                 <span ng-click="GetXmlData(ItemV1)" ng-class="{'file':!ItemV1.IsFolder}">{{ItemV1.Name}}</span>
@@ -90,20 +94,19 @@
                 </td>
                 <td ng-repeat="Language in LanguageList track by $index">
                     <div ng-hide="Item.isEdit">
-                        <span > {{Item.Val[Language]}} </span>
+                        <span> {{Item.Val[Language]}} </span>
                         <div class="btnRow" ng-if="$last">
                             <button type="button" class="btn btn-info" ng-click="edit(Item)">Edit</button>
                         </div>
                     </div>
                     <div ng-show="Item.isEdit">
-                        <input type="text"  ng-model="Item.Val[Language]" />
+                        <input type="text" ng-model="Item.Val[Language]"/>
                         <div class="btnRow" ng-if="$last">
                             <button type="button" class="btn btn-success" ng-click="save(Item)">Save</button>
-                            <button type="button" class="btn btn-secondary" ng-click="Item.isEdit=!Item.isEdit">取消</button>
+                            <button type="button" class="btn btn-secondary" ng-click="Item.isEdit=!Item.isEdit">取消
+                            </button>
                         </div>
                     </div>
-
-
                 </td>
             </tr>
             </tbody>
