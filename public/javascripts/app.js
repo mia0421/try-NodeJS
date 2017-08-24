@@ -72,7 +72,6 @@ app.controller('myCtrl', function ($scope, $http) {
         } else {
             $scope.FolderList = angular.copy($scope.FolderData);
         }
-        console.log($scope.FolderList);
     };
 
     $scope.edit = function (Item) {
