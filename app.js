@@ -24,6 +24,7 @@ app.use(cookieParser());
 
 //設置靜態檔案路徑
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/Doc',express.static(path.join(__dirname, 'out')));
 
 // 把路由器模組載入應用程式中
 app.use('/', index);

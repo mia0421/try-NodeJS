@@ -1,0 +1,13 @@
+{
+  "source": {
+    "include": ["module/","routes/"],
+    "exclude": [],
+    "includePattern": ".+\\.js(doc)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  }
+}
