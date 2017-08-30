@@ -7,14 +7,16 @@ app.controller('myCtrl', function ($scope, $http) {
     $scope.LanguageList = [];
     $scope.SearchFile = "";
     $scope.CurrentFile = "";
+    $scope.CurrentWebSite = "MobileWebMall";
 
-    $scope.GetDir = function () {
-        $http.get('/api/GetDir').then(function (result) {
-            $scope.FolderData = result.data;
-            $scope.FolderList = angular.copy($scope.FolderData);
-        }, function () {
+    $scope.GetDir = function (webSite) {
+        $http.post('/api/GetDir', {Type: webSite})
+            .then(function (result) {
+                $scope.FolderData = result.data;
+                $scope.FolderList = angular.copy($scope.FolderData);
+            }, function () {
 
-        });
+            });
     };
     $scope.GetXmlData = function (selectFile) {
         $scope.CurrentFile = selectFile;
@@ -60,7 +62,7 @@ app.controller('myCtrl', function ($scope, $http) {
             var result = [];
             list.forEach(function (item) {
                 if (item.IsFolder) {
-                    result = result.concat(tool(key,item.ChildList));
+                    result = result.concat(tool(key, item.ChildList));
                 } else {
                     if (item.Name.toLowerCase().indexOf(key.toLowerCase()) >= 0) result.push(item);
                 }
@@ -68,12 +70,15 @@ app.controller('myCtrl', function ($scope, $http) {
             return result;
         };
         if ($scope.SearchFile) {
-           $scope.FolderList =  tool($scope.SearchFile,$scope.FolderData);
+            $scope.FolderList = tool($scope.SearchFile, $scope.FolderData);
         } else {
             $scope.FolderList = angular.copy($scope.FolderData);
         }
     };
-
+    $scope.selectWebsite = function (data) {
+        $scope.CurrentWebSite = data;
+        $scope.GetDir(data);
+    };
     $scope.edit = function (Item) {
         Item.isEdit = true;
     };
@@ -98,5 +103,5 @@ app.controller('myCtrl', function ($scope, $http) {
             });
     };
     //初始
-    $scope.GetDir();
+    $scope.GetDir($scope.CurrentWebSite);
 });

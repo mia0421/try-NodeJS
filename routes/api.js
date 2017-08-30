@@ -5,9 +5,15 @@ var fsPath = require("path");
 // 把路由包裝成模組
 var router = express.Router();
 
+var resxFilePath = {
+    MobileWebMall:'../../nineyi.my.webstore.mobilewebmall/WebStore/Resources',
+    SMS: '../../nineyi.sms/CrossLayer/Resources'
+};
+
 // 取得資料夾結構
-router.get('/GetDir', (req, res) => {
-    xmlTool.renderAllFolder(fsPath.join(__dirname, '../resxFile'))
+router.post('/GetDir', (req, res) => {
+    var path = resxFilePath[req.body.Type] ? resxFilePath[req.body.Type] : '../resxFile';
+    xmlTool.renderAllFolder(fsPath.join(__dirname, path))
         .then((folderList) => {
             res.json(formatTool.getFolderViewJson(folderList));
         });
