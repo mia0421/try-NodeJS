@@ -75,11 +75,12 @@
         <div class="dropdown show">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                {{CurrentWebSite}}
+                {{CurrentWebSite?CurrentWebSite:'test'}}
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="#" ng-click="selectWebsite('MobileWebMall')">MobileWebMall</a>
                 <a class="dropdown-item" href="#" ng-click="selectWebsite('SMS')">SMS</a>
+                <a class="dropdown-item" href="#" ng-click="selectWebsite('')">Test</a>
             </div>
         </div>
     </form>

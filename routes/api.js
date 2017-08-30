@@ -7,7 +7,7 @@ var router = express.Router();
 
 var resxFilePath = {
     MobileWebMall:'../../nineyi.my.webstore.mobilewebmall/WebStore/Resources',
-    SMS: '../../nineyi.sms/CrossLayer/Resources'
+    SMS: '../../nineyi.my.sms/CrossLayer/Resources'
 };
 
 // 取得資料夾結構
