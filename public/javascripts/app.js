@@ -82,6 +82,9 @@ app.controller('myCtrl', function ($scope, $http) {
     $scope.edit = function (Item) {
         Item.isEdit = true;
     };
+    $scope.add = function () {
+
+    };
     $scope.save = function (Item) {
         console.log({
             FileName: $scope.CurrentFile.Name,

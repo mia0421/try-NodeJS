@@ -13,13 +13,13 @@ var builder = new xml2js.Builder();
 var tool = (name, path) => {
     return new Promise((resolve, reject) => {
         var List = [];
-        var statInfo = fs.statSync(path + '/' + name);
+        var statInfo = fs.statSync( fsPath.join(path,name));
 
         if (statInfo.isDirectory()) {
-            xmlTool.renderFolder(path + '/' + name).then((dirList) => {
+            xmlTool.renderFolder( fsPath.join(path,name)).then((dirList) => {
                 var qList = [];
                 dirList.forEach((dirName) => {
-                    qList.push(tool(dirName, path + '/' + name));
+                    qList.push(tool(dirName, fsPath.join(path,name)));
                 });
                 Promise.all(qList).then((dirItems) => {
                     var dirItemList = [];
@@ -29,7 +29,7 @@ var tool = (name, path) => {
 
                     List.push({
                         Name: name,
-                        Path: path + '/' + name,
+                        Path: fsPath.join(path,name),
                         IsFolder: true,
                         ChildList: dirItemList
                     });
@@ -192,11 +192,22 @@ var xmlTool = {
             var xmlBuilder;
 
             parser.parseString(xmlData, (err, xmlObj) => {
+                var isNewVal = true;
                 xmlObj.root.data.forEach((value) => {
                     if (value.$.name === key) {
                         value.value[0] = val;
+                        isNewVal = false;
                     }
                 });
+                if (isNewVal) {
+                    xmlObj.root.data.push({
+                        "$": {
+                            "name": key,
+                            "xml:space": "preserve"
+                        },
+                        "value": [val]
+                    });
+                }
                 xmlBuilder = builder.buildObject(xmlObj);
                 fs.writeFile(path, xmlBuilder, () => {
                     if (err) {

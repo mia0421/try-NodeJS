@@ -106,38 +106,37 @@
     <div class="contentR">
         <table class="table">
             <thead>
-            <tr>
-                <th>Key</th>
-                <th ng-repeat="Language in LanguageList track by $index">{{Language}}</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="Item in FileList|filter:SearchFile" class="trTool">
-                <td>
-                    {{Item.Key}}
-                </td>
-                <td ng-repeat="Language in LanguageList track by $index">
-                    <div ng-hide="Item.isEdit">
-                        <span> {{Item.Val[Language]}} </span>
-                        <div class="btnRow" ng-if="$last">
-                            <button type="button" class="btn btn-info" ng-click="edit(Item)">Edit</button>
-                        </div>
+        <tr>
+            <th>Key</th>
+            <th ng-repeat="Language in LanguageList track by $index">{{Language}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="Item in FileList|filter:SearchFile" class="trTool">
+            <td>
+                {{Item.Key}}
+            </td>
+            <td ng-repeat="Language in LanguageList track by $index">
+                <div ng-hide="Item.isEdit">
+                    <span> {{Item.Val[Language]}} </span>
+                    <div class="btnRow" ng-if="$last">
+                        <button type="button" class="btn btn-info" ng-click="edit(Item)">Edit</button>
                     </div>
-                    <div ng-show="Item.isEdit">
-                        <input type="text" ng-model="Item.Val[Language]" class="form-control"/>
-                        <div class="btnRow" ng-if="$last">
-                            <button type="button" class="btn btn-success" ng-click="save(Item)">Save</button>
-                            <button type="button" class="btn btn-secondary" ng-click="Item.isEdit=!Item.isEdit">Cancel
-                            </button>
-                        </div>
+                </div>
+                <div ng-show="Item.isEdit">
+                    <input type="text" ng-model="Item.Val[Language]" class="form-control"/>
+                    <div class="btnRow" ng-if="$last">
+                        <button type="button" class="btn btn-success" ng-click="save(Item)">Save</button>
+                        <button type="button" class="btn btn-secondary" ng-click="Item.isEdit=!Item.isEdit">Cancel
+                        </button>
                     </div>
-                </td>
-            </tr>
-            </tbody>
+                </div>
+            </td>
+        </tr>
+        </tbody>
         </table>
+        <button type="button" class="btn btn-info" ng-click="add()">Add</button>
     </div>
 </div>
-
-
 </body>
 </html>
