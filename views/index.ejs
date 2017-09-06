@@ -65,6 +65,10 @@
             color: #337ab7;
             cursor: pointer;
         }
+
+        input.ng-invalid {
+            border:1px solid red;
+        }
     </style>
 </head>
 <body ng-app="app" ng-controller="myCtrl">
@@ -85,7 +89,7 @@
         </div>
     </form>
 </nav>
-<div class="content">
+<div class="content" ng-form="Form">
     <div class="contentL">
         <ul style="padding-left: 15px">
             <li ng-repeat="ItemV1 in FolderList" ng-if="!ItemV1.IsFolder||ItemV1.ChildList.length!==0">
@@ -124,9 +128,9 @@
                         </div>
                     </div>
                     <div ng-show="Item.isEdit">
-                        <input type="text" ng-model="Item.Val[Language]" class="form-control"/>
+                        <input type="text" ng-model="Item.Val[Language]" class="form-control" required/>
                         <div class="btnRow" ng-if="$last">
-                            <button type="button" class="btn btn-success" ng-click="save(Item)">Save</button>
+                            <button type="submit" class="btn btn-success" ng-click="save(Item,Form)">Save</button>
                             <button type="button" class="btn btn-secondary" ng-click="Item.isEdit=!Item.isEdit">Cancel
                             </button>
                         </div>
@@ -135,9 +139,8 @@
             </tr>
             </tbody>
         </table>
+        <button class="btn btn-info" ng-click="add()">Add</button>
     </div>
 </div>
-
-
 </body>
 </html>
