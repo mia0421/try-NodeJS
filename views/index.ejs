@@ -67,7 +67,7 @@
         }
 
         input.ng-invalid {
-            border:1px solid red;
+            border: 1px solid red;
         }
     </style>
 </head>
@@ -118,23 +118,25 @@
             <tbody>
             <tr ng-repeat="Item in FileList|filter:SearchFile" class="trTool">
                 <td>
-                    {{Item.Key}}
+                    <span ng-hide="Item.isAdd">{{Item.Key}}</span>
+                    <input type="text" ng-show="Item.isAdd" ng-model="Item.Key" class="form-control" required/>
                 </td>
                 <td ng-repeat="Language in LanguageList track by $index">
-                    <div ng-hide="Item.isEdit">
+                    <div ng-hide="Item.isEdit||Item.isAdd">
                         <span> {{Item.Val[Language]}} </span>
-                        <div class="btnRow" ng-if="$last">
+                        <div class="btnRow" ng-show="$last">
                             <button type="button" class="btn btn-info" ng-click="edit(Item)">Edit</button>
                         </div>
                     </div>
-                    <div ng-show="Item.isEdit">
+                    <div ng-show="Item.isEdit||Item.isAdd">
                         <input type="text" ng-model="Item.Val[Language]" class="form-control" required/>
-                        <div class="btnRow" ng-if="$last">
+                        <div class="btnRow" ng-show="$last">
                             <button type="submit" class="btn btn-success" ng-click="save(Item,Form)">Save</button>
-                            <button type="button" class="btn btn-secondary" ng-click="Item.isEdit=!Item.isEdit">Cancel
+                            <button type="button" class="btn btn-secondary" ng-click="cancel(FileList,Item,$parent.$index)">Cancel
                             </button>
                         </div>
                     </div>
+
                 </td>
             </tr>
             </tbody>

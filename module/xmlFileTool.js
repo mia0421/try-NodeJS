@@ -223,11 +223,23 @@ var xmlTool = {
                     return xml2js.parseString(xmlData);
                 })
                 .then((xmlObj) => {
+                    var isNew = true;
                     xmlObj.root.data.forEach((value) => {
                         if (value.$.name === key) {
                             value.value[0] = val;
+                            isNew = false;
                         }
                     });
+                    if (isNew) {
+                        xmlObj.root.data.push({
+                            '$': {
+                                'name': key,
+                                'xml:space': 'preserve'
+                            },
+                            'value': [val]
+                        });
+                    }
+
                     try {
                         var xmlBuilder = xml2js.builder.buildObject(xmlObj);
                         return fs.writeFile(path, xmlBuilder);
