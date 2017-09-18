@@ -8,6 +8,7 @@ app.controller('myCtrl', function ($scope, $http) {
     $scope.SearchFile = "";
     $scope.CurrentFile = "";
     $scope.CurrentWebSite = "MobileWebMall";
+    $scope.showTreeView = true;
 
     $scope.GetDir = function (webSite) {
         $http.post('/api/GetDir', {Type: webSite})
@@ -129,6 +130,7 @@ app.controller('myCtrl', function ($scope, $http) {
             isAdd: true
         });
     };
+
 
     //初始
     $scope.GetDir($scope.CurrentWebSite);
