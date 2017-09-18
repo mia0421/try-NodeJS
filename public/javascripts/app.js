@@ -40,7 +40,7 @@ app.controller('myCtrl', function ($scope, $http) {
                     if (data.Key === item.Key) {
                         indexNum = index;
                     }
-                })
+                });
                 if (indexNum === -1) {
                     FileList.push({
                         Key: item.Key,
@@ -80,12 +80,13 @@ app.controller('myCtrl', function ($scope, $http) {
         $scope.GetDir(data);
     };
     $scope.edit = function (Item) {
+        // todo 1.複製一份出來給編輯 2.取消時還原 3.同時只編輯一份
         Item.isEdit = true;
     };
-    $scope.add = function () {
-
-    };
-    $scope.save = function (Item) {
+    $scope.save = function (Item,Form) {
+        if(Form.$invalid){
+            return;
+        }
         console.log({
             FileName: $scope.CurrentFile.Name,
             FilePath: $scope.CurrentFile.Path,
@@ -104,6 +105,20 @@ app.controller('myCtrl', function ($scope, $http) {
             }, function () {
                 console.log("Error");
             });
+
+
+    };
+    $scope.add = function () {
+        let val = {};
+        $scope.LanguageList.forEach((item) => {
+            val[item] = "";
+        });
+        // todo 增加是否為編輯狀態,用於判斷取消時是要刪除還是防呆
+        $scope.FileList.push({
+            Key: "",
+            Val: val,
+            isEdit: true
+        });
     };
     //初始
     $scope.GetDir($scope.CurrentWebSite);

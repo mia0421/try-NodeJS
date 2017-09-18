@@ -1,13 +1,13 @@
 /**
  * @module xmlFileTool
  */
-
-var fs = require("fs");
+// 路徑處理
 var fsPath = require("path");
-var xml2js = require('xml2js');
-
-var parser = new xml2js.Parser();
-var builder = new xml2js.Builder();
+// 處理promise物件
+var Promise = require("bluebird");
+// 讀取及寫入檔案＆資料夾
+var fs = require("../module/promisify/fsPromisify");
+var xml2js = require("../module/promisify/xml2jsPromisify");
 
 
 var tool = (name, path) => {
@@ -21,11 +21,13 @@ var tool = (name, path) => {
                 dirList.forEach((dirName) => {
                     qList.push(tool(dirName, fsPath.join(path,name)));
                 });
-                Promise.all(qList).then((dirItems) => {
-                    var dirItemList = [];
-                    dirItems.forEach((item) => {
-                        dirItemList = dirItemList.concat(item);
-                    });
+                return Promise.all(qList);
+            })
+            .then((dirItems) => {
+                var dirItemList = [];
+                dirItems.forEach((item) => {
+                    dirItemList = dirItemList.concat(item);
+                });
 
                     List.push({
                         Name: name,
@@ -37,20 +39,17 @@ var tool = (name, path) => {
                     resolve(List);
                 });
 
+                resolve(List);
+
+            })
+            .catch((err) => {
+                // 錯誤處理
+                reject(err);
             });
-        } else {
-            if (fsPath.extname(name) === ".resx") {
-                List.push({
-                    Name: fsPath.basename(name, '.resx'),
-                    Path: path,
-                    IsFolder: false,
-                    ChildList: []
-                });
-            }
-            resolve(List);
-        }
+
     });
 };
+
 var xmlTool = {
 
     /**
@@ -68,19 +67,23 @@ var xmlTool = {
     renderAllFolder: (path) => {
         return new Promise((resolve, reject) => {
             var FolderList = [];
-            xmlTool.renderFolder(path).then((data) => {
-                var qlist = [];
-                data.forEach((item) => {
-                    qlist.push(tool(item, path));
-                });
-                Promise.all(qlist).then((qitem) => {
+            xmlTool.renderFolder(path)
+                .then((data) => {
+                    var qlist = [];
+                    data.forEach((item) => {
+                        qlist.push(tool(item, path));
+                    });
+                    return Promise.all(qlist);
+                })
+                .then((qitem) => {
                     qitem.forEach((list) => {
-                        FolderList = FolderList.concat(list)
+                        FolderList = FolderList.concat(list);
                     });
                     resolve(FolderList);
                 })
-
-            });
+                .catch((err) => {
+                    reject(err);
+                });
         })
     },
 
@@ -92,13 +95,17 @@ var xmlTool = {
      */
     renderFolder: (path) => {
         return new Promise((resolve, reject) => {
-            fs.readdir(path, (err, data) => {
-                if (err) {
-                    resolve([]);
-                } else {
-                    resolve(data)
-                }
-            });
+            fs.readdir(path)
+                .then((data, err) => {
+                    if (err) {
+                        resolve([]);
+                    } else {
+                        resolve(data);
+                    }
+                })
+                .catch((err) => {
+                    reject(err);
+                });
         });
     },
 
@@ -111,11 +118,15 @@ var xmlTool = {
      */
     searchFile: (fileName, filePath) => {
         return new Promise((resolve, reject) => {
-            xmlTool.renderFolder(filePath).then((fileList) => {
-                resolve(fileList.filter((item) => {
-                    return fsPath.extname(item) === ".resx" && item.indexOf(fileName) >= 0;
-                }));
-            });
+            xmlTool.renderFolder(filePath)
+                .then((fileList) => {
+                    resolve(fileList.filter((item) => {
+                        return fsPath.extname(item) === ".resx" && item.indexOf(fileName) >= 0;
+                    }));
+                })
+                .catch((err) => {
+                    reject(err);
+                });
         });
     },
 
@@ -128,22 +139,27 @@ var xmlTool = {
      */
     renderFile: (fileName, filePath) => {
         return new Promise((resolve, reject) => {
-            var xmlData = fs.readFileSync(`${filePath}/${fileName}`);
-            parser.parseString(xmlData, (err, data) => {
-                if (data) {
-                    resolve({
-                        Name: fileName,
-                        Language: fileName.split('.').length === 2 ? 'Default' : fileName.split('.')[1],
-                        Data: data.root.data
-                    });
-                } else {
-                    //error
-                    reject("parse xml string error");
-                }
-            });
+            fs.readFile(fsPath.join(filePath, fileName))
+                .then((xmlData) => {
+                    return xml2js.parseString(xmlData);
+                })
+                .then((data) => {
+                    if (data) {
+                        resolve({
+                            Name: fileName,
+                            Language: fileName.split('.').length === 2 ? 'Default' : fileName.split('.')[1],
+                            Data: data.root.data
+                        });
+                    } else {
+                        //error
+                        reject("parse xml string error");
+                    }
+                })
+                .catch((err) => {
+                    reject(err);
+                });
 
         });
-
     },
 
     /**
@@ -152,25 +168,28 @@ var xmlTool = {
      * @param fileData {Object}
      * @param fileData.Name {String} 要取得的語系檔名稱
      * @param fileData.Path {String} 要取得的語系檔路徑不含檔案名稱
-     * @returns {Promise}
+     * @returns {Promise<string[]>}
      */
     renderResx: (fileData) => {
         return new Promise((resolve, reject) => {
-            xmlTool.searchFile(fileData.Name, fileData.Path).then((filePathList) => {
-                var QLsit = [];
-                filePathList.forEach((fileName) => {
-                    QLsit.push(xmlTool.renderFile(fileName, fileData.Path));
-                });
-                Promise.all(QLsit).then((QItem) => {
+            xmlTool.searchFile(fileData.Name, fileData.Path)
+                .then((filePathList) => {
+                    var QLsit = [];
+                    filePathList.forEach((fileName) => {
+                        QLsit.push(xmlTool.renderFile(fileName, fileData.Path));
+                    });
+                    return Promise.all(QLsit)
+                })
+                .then((QItem) => {
                     var list = [];
                     QItem.forEach((item) => {
                         list = list.concat(item);
                     });
                     resolve(list);
-                }, (err) => {
+                })
+                .catch((err) => {
                     reject(err);
                 });
-            });
         });
     },
 
@@ -188,8 +207,6 @@ var xmlTool = {
         return new Promise((resolve, reject) => {
             var name = language === 'Default' ? `${fileName}.resx` : `${fileName}.${language}.resx`;
             var path = fsPath.join(filePath, name);
-            var xmlData = fs.readFileSync(path);
-            var xmlBuilder;
 
             parser.parseString(xmlData, (err, xmlObj) => {
                 var isNewVal = true;
@@ -198,6 +215,12 @@ var xmlTool = {
                         value.value[0] = val;
                         isNewVal = false;
                     }
+                })
+                .then(() => {
+                    resolve();
+                })
+                .catch((err) => {
+                    reject(err);
                 });
                 if (isNewVal) {
                     xmlObj.root.data.push({
@@ -237,11 +260,12 @@ var xmlTool = {
                 qList.push(xmlTool.updateFile(fileName, filePath, Key, objkey, LanguageValObj[objkey]));
             });
 
-            Promise.all(qList).then((result) => {
-                resolve();
-            }, () => {
-                reject();
-            });
+            Promise.all(qList)
+                .then((result) => {
+                    resolve();
+                }, (err) => {
+                    reject(err);
+                });
         });
 
     }

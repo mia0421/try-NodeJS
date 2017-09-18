@@ -24,8 +24,9 @@ router.post('/GetXmlData', (req, res) => {
     xmlTool.renderResx(req.body)
         .then((data) => {
             res.json(formatTool.getFileViewJson(data));
-        }, () => {
-            res.sendStatus(500);
+        }, (err) => {
+            // or res.sendStatus(500)
+            res.status(500).send(err.message);
         });
 });
 
@@ -34,7 +35,7 @@ router.post('/EditXmlData', (req, res) => {
         .then(() => {
             res.sendStatus(200);
         }, (err) => {
-            res.sendStatus(500).send(err);
+            res.status(500).send(err.message);
         });
 });
 
