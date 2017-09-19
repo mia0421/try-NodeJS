@@ -208,12 +208,33 @@ var xmlTool = {
             var name = language === 'Default' ? `${fileName}.resx` : `${fileName}.${language}.resx`;
             var path = fsPath.join(filePath, name);
 
-            parser.parseString(xmlData, (err, xmlObj) => {
-                var isNewVal = true;
-                xmlObj.root.data.forEach((value) => {
-                    if (value.$.name === key) {
-                        value.value[0] = val;
-                        isNewVal = false;
+            fs.readFile(path)
+                .then((xmlData) => {
+                    return xml2js.parseString(xmlData);
+                })
+                .then((xmlObj) => {
+                    var isNew = true;
+                    xmlObj.root.data.forEach((value) => {
+                        if (value.$.name === key) {
+                            value.value[0] = val;
+                            isNew = false;
+                        }
+                    });
+                    if (isNew) {
+                        xmlObj.root.data.push({
+                            '$': {
+                                'name': key,
+                                'xml:space': 'preserve'
+                            },
+                            'value': [val]
+                        });
+                    }
+
+                    try {
+                        var xmlBuilder = xml2js.builder.buildObject(xmlObj);
+                        return fs.writeFile(path, xmlBuilder);
+                    } catch (err) {
+                        reject(err);
                     }
                 })
                 .then(() => {

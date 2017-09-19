@@ -8,6 +8,7 @@ app.controller('myCtrl', function ($scope, $http) {
     $scope.SearchFile = "";
     $scope.CurrentFile = "";
     $scope.CurrentWebSite = "MobileWebMall";
+    $scope.showTreeView = true;
 
     $scope.GetDir = function (webSite) {
         $http.post('/api/GetDir', {Type: webSite})
@@ -47,7 +48,8 @@ app.controller('myCtrl', function ($scope, $http) {
                         Val: {
                             [languageItem.Language]: item.Val
                         },
-                        isEdit: false
+                        isEdit: false,
+                        isAdd: false,
                     });
                 } else {
                     FileList[indexNum].Val[languageItem.Language] = item.Val;
@@ -83,8 +85,15 @@ app.controller('myCtrl', function ($scope, $http) {
         // todo 1.複製一份出來給編輯 2.取消時還原 3.同時只編輯一份
         Item.isEdit = true;
     };
-    $scope.save = function (Item,Form) {
-        if(Form.$invalid){
+    $scope.cancel = function (List,Item,Index) {
+        Item.isEdit = false;
+        if (Item.isAdd) {
+            Item.isAdd = false;
+            List.splice(Index,1);
+        }
+    };
+    $scope.save = function (Item, Form) {
+        if (Form.$invalid) {
             return;
         }
         console.log({
@@ -102,6 +111,7 @@ app.controller('myCtrl', function ($scope, $http) {
             .then(function () {
                 console.log("Success");
                 Item.isEdit = false;
+                Item.isAdd = false;
             }, function () {
                 console.log("Error");
             });
@@ -113,13 +123,15 @@ app.controller('myCtrl', function ($scope, $http) {
         $scope.LanguageList.forEach((item) => {
             val[item] = "";
         });
-        // todo 增加是否為編輯狀態,用於判斷取消時是要刪除還是防呆
         $scope.FileList.push({
             Key: "",
             Val: val,
-            isEdit: true
+            isEdit: false,
+            isAdd: true
         });
     };
+
+
     //初始
     $scope.GetDir($scope.CurrentWebSite);
 });
