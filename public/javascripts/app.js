@@ -7,7 +7,7 @@ app.controller('myCtrl', function ($scope, $http) {
     $scope.LanguageList = [];
     $scope.SearchFile = "";
     $scope.CurrentFile = "";
-    $scope.CurrentWebSite = "MobileWebMall";
+    $scope.CurrentWebSite = "";
     $scope.showTreeView = true;
 
     $scope.GetDir = function (webSite) {
