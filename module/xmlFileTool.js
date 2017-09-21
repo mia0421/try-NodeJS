@@ -127,7 +127,8 @@ var xmlTool = {
                 xmlTool.renderFolder(filePath)
                     .then((fileList) => {
                         resolve(fileList.filter((item) => {
-                            return fsPath.extname(item) === ".resx" && item.indexOf(fileName) >= 0;
+                            // 去掉副檔名及語系字串後的檔案名稱
+                            return fsPath.extname(item) === ".resx" && fileName === item.split('.')[0];
                         }));
                     })
                     .catch((err) => {
